@@ -1,0 +1,285 @@
+{
+  "personal": {
+    "name": "Mian Mansoor Ahmad",
+    "initials": "M",
+    "title": "Agentic Chatbot",
+    "subtitle": "Transforming ideas into intelligent solutions through AI innovation and strategic leadership. Specialized in building advanced conversational systems and LLM-powered applications.",
+    "tagline": "Agentic Chatbot |",
+    "profileImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAkpaFekK7BdwnNPh2-1FFeABRBC79ASOITCXYjVHDt0-lzwavDNcyqAuvLx5Il-se9O5Y7zabcj_w9TT3kD2B9Uebra0spVZ_s6rbui5utqSfQoQVVnkLwDDww9fE9V4t8NgQTRooPY2LS8WLis4fDYZzQUvxnET46bjMF4rDIV3d_CeKuFgpq9jpz-99B3AuoDM1fG77G2NrwTxWyk7rsbv62eWWCshq1DS8PRYTjng67RCaBky5CkbbyNck3JUqdb0mn9ewtnlo",
+    "heroImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAONofLSaBklXuUbG-yynzewE88u7XfoxHGggMqFv4qxN9VFGRSGftKSTjpT-9o6_1G8oSeQlnXQaIlpgmlJF25LskyZNE6BkGg3Ris3ttNA7zU2vnGy_Rm_mxZJFDkitfWCcPEDPpd7KKaIWm8TMPlOCwf4Ox7SB6WTjBk-YLbZUL1OYbYatIL3cfLIEOnMwr0aRA869qJtIYPjkLzeNpxSXJ8yos5zEEP-xjVVqU5dLJ09sbBXMwBKdmUOzkzYBbibLYeKqqGsIo"
+  },
+  "about": {
+    "title": "Meet",
+    "highlightedTitle": "MANSOOR",
+    "paragraphs": [
+      "A journey that began with physics and nanotechnology led me to discover the transformative power of <span class=\"font-semibold text-primary\">Artificial Intelligence</span>, turning a curiosity into a passionate career.",
+      "Today, I'm at the forefront of <span class=\"font-semibold text-primary\">AI Innovation</span>, specializing in <span class=\"font-semibold text-primary\">Large Language Models</span> and <span class=\"font-semibold text-primary\">Retrieval Augmented Generation</span>.",
+      "As an entrepreneur, I'm <span class=\"font-semibold text-primary\">revolutionizing chatbot industry</span> with AI and <span class=\"font-semibold text-primary\">building enterprise-grade conversational systems</span> at Convsol.",
+      "My work combines cutting-edge research in <span class=\"font-semibold text-primary\">Natural Language Processing</span> with <span class=\"font-semibold text-primary\">Cloud-Native Architecture</span>, delivering scalable AI solutions that make a real-world impact.",
+      "Currently building <span class=\"font-semibold text-primary\">AI Agents</span> and enhancing <span class=\"font-semibold text-primary\">Conversational AI</span> at Convsol."
+    ]
+  },
+  "navigation": [
+    { "label": "Home", "icon": "home", "href": "/" },
+    { "label": "About", "icon": "person", "href": "/about" },
+    { "label": "Projects", "icon": "work", "href": "/projects" },
+    { "label": "Contact", "icon": "email", "href": "/contact" }
+  ],
+  "timeline": [
+    {
+      "type": "work",
+      "icon": "computer",
+      "iconColor": "teal",
+      "title": "Founder & AI Engineer",
+      "location": "ConvSol",
+      "period": "May 2022 - Present",
+      "description": [
+        "Design, develop and deploy Agentic Chatbot Systems backed with LLMs",
+        "Hierarchical Agentic Systems to handle different conversation flows and tasks",
+        "Fine-tune LLMs according to conversation requirements and for specialized outputs",
+        "RAG techniques to call custom functions, connecting external databases, APIs and tracker stores",
+        "Creative prompt engineering for LLMs to improve chatbot's performance",
+        "Integrate with messaging platforms to handle different channels and languages"
+      ],
+      "skills": [
+        "Agentic Chatbot System",
+        "LLMs",
+        "Agentic Systems",
+        "RAG",
+        "Prompt Engineering",
+        "API Integration",
+        "Micro-services",
+        "Kubernetes",
+        "Docker",
+        "Open Source LLMs",
+        "Hybrid Architecture",
+        "NLU Pipeline",
+        "Chatbot Assistant"
+      ]
+    },
+    {
+      "type": "education",
+      "icon": "school",
+      "iconColor": "amber",
+      "title": "Master of Science in Computer Science",
+      "location": "National University of Science and Technology, H-12, Islamabad",
+      "period": "Sep 2021 - Feb 2025",
+      "description": [
+        "Core Courses: Mathematical Methods for Computing, Advanced Algorithm Analysis, Advanced Operating Systems, Advanced Theory of Computation",
+        "Specialization Courses: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Big Data Analytics, Large Language Models",
+        "Audit Courses: Cloud Computing, Semantic Web"
+      ],
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "Computer Vision",
+        "Big Data",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "type": "education",
+      "icon": "school",
+      "iconColor": "amber",
+      "title": "Bachelor of Science in Physics",
+      "location": "National University of Science and Technology, H-12, Islamabad",
+      "period": "Sep 2014 - Aug 2018",
+      "description": [
+        "Minor in Nanotechnology",
+        "FYP on 2d-Mxene hybrid Thermoelectric Materials",
+        "GPA: 3.2"
+      ],
+      "skills": [
+        "Physics",
+        "Nanotechnology",
+        "Thermoelectric Materials",
+        "Research"
+      ]
+    }
+  ],
+  "social": [
+    {
+      "name": "GitHub",
+      "href": "#",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "href": "#",
+      "icon": "linkedin"
+    },
+    {
+      "name": "X (Twitter)",
+      "href": "#",
+      "icon": "x"
+    },
+    {
+      "name": "Email",
+      "href": "#",
+      "icon": "email"
+    }
+  ],
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Explore my work across Upwork, Private clients, and Fiverr. Each project includes detailed descriptions, client feedback, and reviews.",
+    "filters": {
+      "platforms": ["All Projects", "Upwork"],
+      "categories": ["All Categories", "Chatbots", "AI & ML", "Platforms", "Python/JavaScript Development", "Analytics", "Cloud Services"],
+      "domains": ["All Domains", "Healthcare", "Banking & Finance", "Travel & Hospitality", "Education", "Customer Support", "AI & Automation"]
+    },
+    "items": [
+      {
+        "slug": "azure-decentraland-rasa-chatbots",
+        "platform": "UPWORK",
+        "featured": true,
+        "rating": 5.0,
+        "title": "Azure Deployment for Decentraland Metaverse with integrated RASA chatbots",
+        "category": "Education",
+        "date": "May 28, 2024 - Oct 9, 2024",
+        "client": {
+          "name": "Upwork Client (Spain, Alicante)",
+          "feedback": "We worked with Mian on the deployment of a Decentraland Metaverse integrated with Rasa chatbots, and his work met all expectations."
+        },
+        "tags": ["Rasa", "Azure", "Decentraland", "Docker"],
+        "description": "This project involved a comprehensive deployment of a RASA chatbot within the Decentraland metaverse, hosted on Microsoft Azure, to enhance user interaction and engagement.",
+        "objectives": [
+          "Deploy a scalable and reliable RASA chatbot on Azure cloud infrastructure.",
+          "Integrate the chatbot seamlessly into the Decentraland metaverse environment.",
+          "Ensure high availability and low latency for real-time user interactions.",
+          "Implement CI/CD pipelines for automated testing and deployment."
+        ],
+        "detailedDescription": "We worked with Mian on the deployment of a Decentraland Metaverse integrated with Rasa chatbots, and his work met all expectations. The project required setting up a robust backend on Azure, including virtual machines, networking, and security groups. Mian configured Nginx as a reverse proxy and used Docker Compose to manage the containerized application services. GitHub Actions were implemented to create a full CI/CD pipeline, automating the build, test, and deployment process, which significantly streamlined our development workflow and reduced manual errors. His expertise in both RASA and cloud infrastructure was pivotal to the project's success.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuANikwhXU1INaIix2EUGHYZZMpbQttB9b0g6RaQB_GkXoXoLTDsHBL4TP4oEblL-FXfJZfeRhPx517nOb3O3_-lOzEoebcX0w-iWVuZApluHua-koKzG64NGrNmqlPMV9tHpSB-tgMynuX9dCm3XrJ2VwtV0nEa1dGyRuEbyCLEamiQVK6tgknb_VlJrJ3_Fr3EhE8urx9VcL73LDti-dMKjdW6XDtK2youQwOGMPLTuHc1wpauQHF4Q3B67J29VNOafwFiH2i3wsg",
+        "technologies": ["Rasa", "Azure", "Decentraland", "Docker", "Docker Compose", "Nginx", "GitHub Actions", "CI/CD"]
+      },
+      {
+        "slug": "lamp-python-rest-api-aws",
+        "platform": "UPWORK",
+        "featured": true,
+        "rating": 5.0,
+        "title": "Seeking Developers experienced with LAMP (Python) and REST API development",
+        "category": "AI & Automation",
+        "date": "Jun 7, 2023 - Jun 9, 2023",
+        "client": {
+          "name": "Upwork Client (United States, Santa Clara)",
+          "feedback": "Mian did a great job on a LAMP REST API development with Amazon Web Services. We'd be happy to work with this freelancer again."
+        },
+        "tags": ["Python", "LAMP Stack", "REST API", "AWS", "AWS EC2"],
+        "description": "Development of a robust LAMP stack REST API with Python, deployed on Amazon Web Services infrastructure.",
+        "objectives": [
+          "Build scalable REST API endpoints using Python.",
+          "Deploy and configure LAMP stack on AWS EC2.",
+          "Implement secure API authentication and authorization.",
+          "Ensure high performance and reliability."
+        ],
+        "detailedDescription": "Mian did a great job on a LAMP REST API development with Amazon Web Services. The project involved creating a comprehensive RESTful API using Python, setting up the LAMP stack on AWS EC2 instances, and implementing proper security measures. The API was designed to handle high traffic loads and provided excellent performance throughout the development process.",
+        "image": null,
+        "technologies": ["Python", "LAMP Stack", "REST API", "AWS", "AWS EC2", "Linux", "Apache", "MySQL"]
+      },
+      {
+        "slug": "rasa-chatbot-chatgpt-integration",
+        "platform": "UPWORK",
+        "featured": true,
+        "rating": 5.0,
+        "title": "RASA Chatbot Development, Deployment and Integrated with ChatGPT",
+        "category": "AI & Automation",
+        "date": "Apr 17, 2023 - Dec 23, 2023",
+        "client": {
+          "name": "Upwork Client (Spain, Alicante)",
+          "feedback": "Mian is specialized in Rasa Open Source and his expertise in customizing functionalities and adeptness in both cloud and on-premise was exactly..."
+        },
+        "tags": ["Rasa", "Python", "Automation"],
+        "description": "Development and deployment of a RASA chatbot with ChatGPT integration for enhanced conversational capabilities.",
+        "objectives": [
+          "Develop a custom RASA chatbot with advanced NLU capabilities.",
+          "Integrate ChatGPT API for enhanced responses.",
+          "Deploy on both cloud and on-premise infrastructure.",
+          "Customize chatbot functionalities based on specific requirements."
+        ],
+        "detailedDescription": "Mian is specialized in Rasa Open Source and his expertise in customizing functionalities and adeptness in both cloud and on-premise was exactly what we needed. The project involved developing a sophisticated chatbot using RASA framework, integrating it with ChatGPT for enhanced conversational abilities, and deploying it across multiple environments. The solution provided excellent user experience and met all our requirements.",
+        "image": null,
+        "technologies": ["Rasa", "Python", "ChatGPT", "NLU", "Docker", "API Integration"]
+      },
+      {
+        "slug": "python-flask-programming-study",
+        "platform": "UPWORK",
+        "featured": false,
+        "rating": 5.0,
+        "title": "Participants for Python Programming Study with Flask",
+        "category": "AI & Automation",
+        "date": "Jul 22, 2024 - Jul 23, 2024",
+        "client": {
+          "name": "Upwork Client",
+          "feedback": "Very good communication, delivered on time. It was nice working with you!"
+        },
+        "tags": ["Python", "Flask", "Web Development"],
+        "description": "Python programming study project using Flask framework for web development.",
+        "objectives": [
+          "Develop Flask web application.",
+          "Implement best practices for Python programming.",
+          "Create a functional study platform."
+        ],
+        "detailedDescription": "Very good communication, delivered on time. It was nice working with you! This project involved creating a Python programming study platform using Flask, implementing clean code practices and delivering a functional web application.",
+        "image": null,
+        "technologies": ["Python", "Flask", "Web Development", "HTML", "CSS"]
+      },
+      {
+        "slug": "frontend-chatbot-webchat",
+        "platform": "UPWORK",
+        "featured": false,
+        "rating": 5.0,
+        "title": "Front-end Specialist for Chatbot Webchat Issues",
+        "category": "AI & Automation",
+        "date": "Jun 20, 2024 - Oct 15, 2024",
+        "client": {
+          "name": "Upwork Client (Spain, Alicante)",
+          "feedback": "Great freelancer! Always a pleasure working with him"
+        },
+        "tags": ["Vite", "Webchat Integration", "Web Development"],
+        "description": "Front-end development and troubleshooting for chatbot webchat integration.",
+        "objectives": [
+          "Fix and improve chatbot webchat interface.",
+          "Enhance user experience and responsiveness.",
+          "Integrate with existing backend systems."
+        ],
+        "detailedDescription": "Great freelancer! Always a pleasure working with him. This project involved front-end development work on a chatbot webchat interface, fixing issues, improving user experience, and ensuring seamless integration with backend systems.",
+        "image": null,
+        "technologies": ["Vite", "Webchat Integration", "Web Development", "JavaScript", "React"]
+      },
+      {
+        "slug": "azure-openai-api-setup",
+        "platform": "UPWORK",
+        "featured": false,
+        "rating": 5.0,
+        "title": "Azure OpenAI Set UP with APIs Connection",
+        "category": "AI & Automation",
+        "date": "May 29, 2024 - Oct 9, 2024",
+        "client": {
+          "name": null,
+          "feedback": null,
+          "description": [
+            "Setup of the Azure OpenAI platform",
+            "Model deployment and configuration",
+            "API connection setup and configuration"
+          ]
+        },
+        "tags": ["Azure OpenAI", "API Integration", "Python"],
+        "description": "Setup and configuration of Azure OpenAI platform with API connections.",
+        "objectives": [
+          "Setup of the Azure OpenAI platform",
+          "Model deployment and configuration",
+          "API connection setup and configuration"
+        ],
+        "detailedDescription": "This project involved setting up the Azure OpenAI platform, deploying and configuring AI models, and establishing secure API connections. The setup included proper authentication, rate limiting, and monitoring to ensure reliable access to OpenAI services through Azure infrastructure.",
+        "image": null,
+        "technologies": ["Azure OpenAI", "API Integration", "Python", "Azure", "REST API"]
+      }
+    ]
+  },
+  "footer": {
+    "title": "FIND ME ON",
+    "subtitle": "Feel free to <span class=\"text-primary\">connect</span> with me"
+  }
+}
+
