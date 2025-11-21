@@ -29,17 +29,6 @@ export default function ProjectsPage() {
     return platformMatch;
   });
 
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }).map((_, i) => (
-      <span
-        key={i}
-        className="material-icons-outlined text-yellow-400 text-base"
-        style={materialIconsOutlined}
-      >
-        star
-      </span>
-    ));
-  };
 
   return (
     <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 bg-background-light dark:bg-background-dark min-h-screen">
@@ -148,106 +137,77 @@ export default function ProjectsPage() {
                   scale: 1.03,
                   y: -8,
                 }}
-                className="bg-[#141419] p-6 lg:p-8 rounded-2xl border border-gray-800/50 flex flex-col h-full transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 cursor-pointer group"
+                className="bg-[#191920] p-6 rounded-2xl border border-gray-800 flex flex-col space-y-5 h-full transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 cursor-pointer group"
               >
                 {/* Header Section */}
-                <div className="flex justify-between items-start mb-5">
+                <div className="flex justify-between items-start">
                   <div className="flex items-center gap-2 flex-wrap">
-                    <span className="bg-green-500 text-black text-xs font-bold px-3 py-1.5 rounded-full">
+                    <span className="bg-green-500/10 text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-500/30">
                       {project.platform}
                     </span>
                     {project.featured && (
-                      <span className="bg-orange-400 text-black text-xs font-bold px-3 py-1.5 rounded-full">
+                      <span className="bg-yellow-500/10 text-yellow-400 text-xs font-bold px-3 py-1 rounded-full border border-yellow-500/30">
                         Featured
                       </span>
                     )}
                   </div>
-                  <div className="flex items-center space-x-1 bg-gray-800/60 px-2.5 py-1.5 rounded-lg">
-                    {renderStars(project.rating)}
-                    <span className="text-white font-semibold text-sm ml-1">
+                  <div className="flex items-center space-x-1 shrink-0">
+                    <span className="material-symbols-outlined text-yellow-400 text-base" style={{ fontVariationSettings: "'FILL' 1" }}>
+                      star
+                    </span>
+                    <span className="text-white font-semibold text-sm">
                       {project.rating}
                     </span>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors line-clamp-2 min-h-[3.5rem]">
+                <h3 className="text-xl font-semibold text-white leading-tight group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
 
-                {/* Meta Information */}
-                <div className="flex flex-col gap-2.5 mb-5 text-sm text-gray-400">
-                  <div className="flex items-center space-x-2">
-                    <span
-                      className="material-icons-outlined text-emerald-400 text-base"
-                      style={materialIconsOutlined}
-                    >
-                      category
-                    </span>
-                    <span className="font-medium">{project.category}</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span
-                      className="material-icons-outlined text-emerald-400 text-base"
-                      style={materialIconsOutlined}
-                    >
-                      calendar_today
-                    </span>
-                    <span className="text-xs">{project.date}</span>
-                  </div>
-                </div>
-
-                {/* Client Feedback or Description */}
-                <div className="mb-5 flex-grow">
-                  {project.client?.feedback ? (
-                    <div className="bg-emerald-900/20 border border-emerald-400/20 p-4 rounded-lg text-sm text-gray-300 relative">
-                      <div className="absolute -top-2.5 left-4 bg-[#141419] px-2 flex items-center gap-1.5 rounded-full border border-emerald-400/20">
-                        <span
-                          className="material-icons-outlined text-emerald-400 text-sm"
-                          style={materialIconsOutlined}
-                        >
+                {/* Description and Meta Information */}
+                <div className="space-y-3 text-sm text-gray-400 flex-grow">
+                  {project.description ? (
+                    <p>{project.description}</p>
+                  ) : project.client?.feedback ? (
+                    <p className="italic line-clamp-2">&quot;{project.client.feedback}&quot;</p>
+                  ) : (
+                    <p className="text-gray-500">No description available.</p>
+                  )}
+                  
+                  <div className="border-t border-gray-800 pt-3 flex flex-col space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <span className="material-icons-outlined text-base text-gray-500">
+                        calendar_today
+                      </span>
+                      <span>{project.date}</span>
+                    </div>
+                    {project.client?.name && (
+                      <div className="flex items-center space-x-2">
+                        <span className="material-icons-outlined text-base text-gray-500">
                           person
                         </span>
-                        <span className="text-emerald-400 font-medium text-xs">
-                          {project.client.name}
-                        </span>
+                        <span>{project.client.name}</span>
                       </div>
-                      <p className="pt-3 italic line-clamp-3 text-xs leading-relaxed">
-                        &quot;{project.client.feedback}&quot;
-                      </p>
-                    </div>
-                  ) : project.client?.description ? (
-                    <div className="border border-gray-700/30 bg-gray-800/10 p-4 rounded-lg text-sm text-gray-300">
-                      <ul className="space-y-1.5 list-disc list-inside">
-                        {project.client.description.slice(0, 2).map((item, idx) => (
-                          <li key={idx} className="text-xs leading-relaxed">{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-                </div>
-
-                {/* Tags Section - Better positioned at bottom */}
-                <div className="mt-auto pt-5 border-t border-gray-800/30">
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.slice(0, 4).map((tag, tagIndex) => (
-                      <motion.span
-                        key={tagIndex}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: index * 0.1 + tagIndex * 0.05 }}
-                        whileHover={{ scale: 1.05 }}
-                        className="bg-blue-600/20 text-blue-300 text-xs font-medium px-3 py-1.5 rounded-full border border-blue-500/20 hover:bg-blue-600/30 hover:border-blue-400/40 transition-all cursor-default"
-                      >
-                        {tag}
-                      </motion.span>
-                    ))}
-                    {project.tags.length > 4 && (
-                      <span className="bg-gray-700/30 text-gray-400 text-xs font-medium px-3 py-1.5 rounded-full">
-                        +{project.tags.length - 4}
-                      </span>
                     )}
                   </div>
+                </div>
+
+                {/* Tags Section */}
+                <div className="flex flex-wrap gap-2 pt-2">
+                  {project.tags.map((tag, tagIndex) => (
+                    <motion.span
+                      key={tagIndex}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: index * 0.1 + tagIndex * 0.05 }}
+                      whileHover={{ scale: 1.05 }}
+                      className="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20 hover:bg-primary/20 transition-all cursor-default"
+                    >
+                      {tag}
+                    </motion.span>
+                  ))}
                 </div>
               </motion.div>
             </Link>

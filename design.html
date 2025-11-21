@@ -2,9 +2,10 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Project Details - Personal Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>My Projects - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
 <script>
     tailwind.config = {
@@ -12,168 +13,313 @@
       theme: {
         extend: {
           colors: {
-            primary: "#A855F7",
-            "background-light": "#F9FAFB",
-            "background-dark": "#111827",
+            primary: "#A755F7", // Purple accent
+            "background-light": "#F3F4F6", // Light Gray for light mode
+            "background-dark": "#0D0C12", // Very dark background for dark mode
           },
           fontFamily: {
-            display: ["Roboto", "sans-serif"],
+            display: ["Inter", "sans-serif"],
           },
           borderRadius: {
-            DEFAULT: "0.5rem",
+            DEFAULT: "0.5rem", // 8px
           },
         },
       },
     };
   </script>
 <style>
-    body {
-      font-family: 'Roboto', sans-serif;
+    .material-icons-outlined, .material-symbols-outlined {
+      font-feature-settings: 'liga';
+    }
+    .text-glow {
+      text-shadow: 0 0 8px rgba(167, 85, 247, 0.4);
     }
   </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-gray-300 dark:text-gray-300 antialiased">
-<div class="w-full min-h-screen">
-<header class="py-6 px-4 sm:px-6 lg:px-8">
-<nav class="container mx-auto max-w-7xl flex justify-between items-center">
-<div class="flex items-center">
-<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-<span class="text-white text-2xl font-bold">M</span>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-400 dark:text-gray-400">
+<div class="container mx-auto px-4 py-8">
+<header class="flex justify-between items-center mb-16">
+<div class="flex items-center space-x-2">
+<svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.35294 40V0H14.1176V11.7647H25.8824V0H37.6471V40H25.8824V28.2353H14.1176V40H2.35294Z" fill="url(#paint0_linear_1_2)"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1_2" x1="20" x2="20" y1="0" y2="40">
+<stop stop-color="#A755F7"></stop>
+<stop offset="1" stop-color="#6F39F6"></stop>
+</linearGradient>
+</defs>
+</svg>
 </div>
-</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="flex items-center space-x-2 text-gray-400 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors" href="#">
-<span class="material-icons text-xl">home</span>
+<nav class="hidden md:flex items-center space-x-8 text-gray-300">
+<a class="flex items-center space-x-2 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">home</span>
 <span>Home</span>
 </a>
-<a class="flex items-center space-x-2 text-gray-400 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors" href="#">
-<span class="material-icons text-xl">person</span>
+<a class="flex items-center space-x-2 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">person</span>
 <span>About</span>
 </a>
-<a class="flex items-center space-x-2 bg-primary/20 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
-<span class="material-icons text-xl">work</span>
+<a class="bg-primary/20 text-white flex items-center space-x-2 py-2 px-4 rounded-lg" href="#">
+<span class="material-symbols-outlined text-xl">work</span>
 <span>Projects</span>
 </a>
-<a class="flex items-center space-x-2 text-gray-400 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors" href="#">
-<span class="material-icons text-xl">email</span>
+<a class="flex items-center space-x-2 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">email</span>
 <span>Contact</span>
 </a>
-</div>
-<button class="md:hidden text-white dark:text-white">
-<span class="material-icons text-3xl">menu</span>
-</button>
 </nav>
 </header>
-<main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-<div class="mb-12">
-<a class="inline-flex items-center text-primary hover:text-purple-400 transition-colors" href="#">
-<span class="material-icons mr-2">arrow_back</span>
-          Back to Projects
-        </a>
+<main>
+<div class="text-center mb-16">
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-4 text-glow">My Projects</h1>
+<p class="max-w-2xl mx-auto text-lg text-gray-400">
+          Explore my work across Upwork, Private clients, and Fiverr. Each project includes detailed descriptions, client feedback, and reviews.
+        </p>
 </div>
-<div class="bg-gray-100/5 dark:bg-gray-800/20 p-8 md:p-12 rounded-lg border border-gray-700/50">
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-<div class="lg:col-span-2">
-<div class="mb-4 flex items-center space-x-4">
-<span class="bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">UPWORK</span>
-<span class="bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Featured</span>
-</div>
-<h1 class="text-4xl font-bold text-white dark:text-white mb-4">Azure Deployment for Decentraland Metaverse with integrated RASA chatbots</h1>
-<p class="text-lg text-gray-400 dark:text-gray-400 mb-8">This project involved a comprehensive deployment of a RASA chatbot within the Decentraland metaverse, hosted on Microsoft Azure, to enhance user interaction and engagement.</p>
-<div class="mb-10">
-<h2 class="text-2xl font-bold text-white dark:text-white mb-4">Project Visuals</h2>
-<div class="aspect-video bg-gray-700/50 rounded-lg flex items-center justify-center">
-<img alt="Screenshot of the Decentraland Metaverse project interface" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANikwhXU1INaIix2EUGHYZZMpbQttB9b0g6RaQB_GkXoXoLTDsHBL4TP4oEblL-FXfJZfeRhPx517nOb3O3_-lOzEoebcX0w-iWVuZApluHua-koKzG64NGrNmqlPMV9tHpSB-tgMynuX9dCm3XrJ2VwtV0nEa1dGyRuEbyCLEamiQVK6tgknb_VlJrJ3_Fr3EhE8urx9VcL73LDti-dMKjdW6XDtK2youQwOGMPLTuHc1wpauQHF4Q3B67J29VNOafwFiH2i3wsg"/>
+<div class="flex justify-center border-b border-gray-800 mb-12">
+<div class="flex space-x-8">
+<button class="py-3 text-white border-b-2 border-primary font-semibold">All Projects</button>
+<button class="py-3 text-gray-400 hover:text-white transition-colors">Upwork</button>
 </div>
 </div>
-<div class="space-y-8">
-<div>
-<h3 class="text-xl font-semibold text-white dark:text-white mb-3">Project Objectives</h3>
-<ul class="list-disc list-inside space-y-2 text-gray-300 dark:text-gray-300">
-<li>Deploy a scalable and reliable RASA chatbot on Azure cloud infrastructure.</li>
-<li>Integrate the chatbot seamlessly into the Decentraland metaverse environment.</li>
-<li>Ensure high availability and low latency for real-time user interactions.</li>
-<li>Implement CI/CD pipelines for automated testing and deployment.</li>
-</ul>
-</div>
-<div>
-<h3 class="text-xl font-semibold text-white dark:text-white mb-3">Detailed Description</h3>
-<p class="text-gray-300 dark:text-gray-300 leading-relaxed">
-                  We worked with Mian on the deployment of a Decentraland Metaverse integrated with Rasa chatbots, and his work met all expectations. The project required setting up a robust backend on Azure, including virtual machines, networking, and security groups. Mian configured Nginx as a reverse proxy and used Docker Compose to manage the containerized application services. GitHub Actions were implemented to create a full CI/CD pipeline, automating the build, test, and deployment process, which significantly streamlined our development workflow and reduced manual errors. His expertise in both RASA and cloud infrastructure was pivotal to the project's success.
-                </p>
-</div>
-</div>
-</div>
-<div class="lg:col-span-1 space-y-8">
-<div class="bg-gray-700/20 dark:bg-gray-900/40 p-6 rounded-lg border border-gray-700/50">
-<h3 class="text-lg font-semibold text-white dark:text-white mb-4 border-b border-gray-700/50 pb-3">Project Info</h3>
-<div class="space-y-4 text-sm">
-<div class="flex items-center">
-<span class="material-icons text-gray-400 dark:text-gray-400 mr-3">person</span>
-<div>
-<p class="text-gray-400 dark:text-gray-400">Client</p>
-<p class="font-medium text-white dark:text-white">Upwork Client (Spain, Alicante)</p>
-</div>
-</div>
-<div class="flex items-center">
-<span class="material-icons text-gray-400 dark:text-gray-400 mr-3">domain</span>
-<div>
-<p class="text-gray-400 dark:text-gray-400">Domain</p>
-<p class="font-medium text-white dark:text-white">Education</p>
-</div>
-</div>
-<div class="flex items-center">
-<span class="material-icons text-gray-400 dark:text-gray-400 mr-3">date_range</span>
-<div>
-<p class="text-gray-400 dark:text-gray-400">Duration</p>
-<p class="font-medium text-white dark:text-white">May 28, 2024 - Oct 9, 2024</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-gray-700/20 dark:bg-gray-900/40 p-6 rounded-lg border border-gray-700/50">
-<h3 class="text-lg font-semibold text-white dark:text-white mb-4 border-b border-gray-700/50 pb-3">Technologies Used</h3>
+<div class="space-y-6 mb-12">
+<div class="flex flex-col sm:flex-row sm:items-center gap-4">
+<span class="font-semibold text-white w-28 text-sm uppercase tracking-wider">Category:</span>
 <div class="flex flex-wrap gap-2">
-<span class="bg-blue-600 text-white text-xs font-medium px-3 py-1.5 rounded-full">Rasa</span>
-<span class="bg-blue-600 text-white text-xs font-medium px-3 py-1.5 rounded-full">Azure</span>
-<span class="bg-blue-600 text-white text-xs font-medium px-3 py-1.5 rounded-full">Decentraland</span>
-<span class="bg-blue-600 text-white text-xs font-medium px-3 py-1.5 rounded-full">Docker</span>
-<span class="bg-blue-600 text-white text-xs font-medium px-3 py-1.5 rounded-full">Docker Compose</span>
-<span class="bg-blue-600 text-white text-xs font-medium px-3 py-1.5 rounded-full">Nginx</span>
-<span class="bg-blue-600 text-white text-xs font-medium px-3 py-1.5 rounded-full">GitHub Actions</span>
-<span class="bg-blue-600 text-white text-xs font-medium px-3 py-1.5 rounded-full">CI/CD</span>
+<button class="bg-primary/80 text-white font-semibold px-4 py-2 rounded-full text-sm">All Categories</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Chatbots</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">AI &amp; ML</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Platforms</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Python/JavaScript Development</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Analytics</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Cloud Services</button>
 </div>
 </div>
+<div class="flex flex-col sm:flex-row sm:items-center gap-4">
+<span class="font-semibold text-white w-28 text-sm uppercase tracking-wider">Domain:</span>
+<div class="flex flex-wrap gap-2">
+<button class="bg-primary/80 text-white font-semibold px-4 py-2 rounded-full text-sm">All Domains</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Healthcare</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Banking &amp; Finance</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Travel &amp; Hospitality</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Education</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">Customer Support</button>
+<button class="bg-gray-800 text-gray-300 hover:bg-gray-700 font-semibold px-4 py-2 rounded-full text-sm transition-colors">AI &amp; Automation</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-[#191920] p-6 rounded-2xl border border-gray-800 flex flex-col space-y-5 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-green-500/10 text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-500/30">UPWORK</span>
+<span class="bg-yellow-500/10 text-yellow-400 text-xs font-bold px-3 py-1 rounded-full border border-yellow-500/30">Featured</span>
+</div>
+<div class="flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-yellow-400 text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-white font-semibold text-sm">5.0</span>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-white leading-tight">Azure Deployment for Decentraland Metaverse with integrated RASA chatbots</h3>
+<div class="space-y-3 text-sm text-gray-400 flex-grow">
+<p>Integrated RASA chatbots into a Decentraland Metaverse environment, deployed on Azure for scalable and robust performance.</p>
+<div class="border-t border-gray-800 pt-3 flex flex-col space-y-2">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">calendar_today</span>
+<span>May 28, 2024 - Oct 9, 2024</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">person</span>
+<span>Upwork Client (Spain, Alicante)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Rasa</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Azure</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Decentraland</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Docker</span>
+</div>
+</div>
+<div class="bg-[#191920] p-6 rounded-2xl border border-gray-800 flex flex-col space-y-5 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-green-500/10 text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-500/30">UPWORK</span>
+<span class="bg-yellow-500/10 text-yellow-400 text-xs font-bold px-3 py-1 rounded-full border border-yellow-500/30">Featured</span>
+</div>
+<div class="flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-yellow-400 text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-white font-semibold text-sm">5.0</span>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-white leading-tight">Seeking Developers experienced with LAMP (Python) and REST API development</h3>
+<div class="space-y-3 text-sm text-gray-400 flex-grow">
+<p>Developed a robust REST API using a LAMP stack with Python, focusing on performance and scalability for a web application.</p>
+<div class="border-t border-gray-800 pt-3 flex flex-col space-y-2">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">calendar_today</span>
+<span>Jun 7, 2023 - Jun 9, 2023</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">person</span>
+<span>Upwork Client (United States, Santa Clara)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Python</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">LAMP Stack</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">REST API</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">AWS</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">AWS EC2</span>
+</div>
+</div>
+<div class="bg-[#191920] p-6 rounded-2xl border border-gray-800 flex flex-col space-y-5 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-green-500/10 text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-500/30">UPWORK</span>
+<span class="bg-yellow-500/10 text-yellow-400 text-xs font-bold px-3 py-1 rounded-full border border-yellow-500/30">Featured</span>
+</div>
+<div class="flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-yellow-400 text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-white font-semibold text-sm">5.0</span>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-white leading-tight">RASA Chatbot Development, Deployment and Integrated with ChatGPT</h3>
+<div class="space-y-3 text-sm text-gray-400 flex-grow">
+<p>Developed and deployed a RASA chatbot, integrating it with ChatGPT for enhanced conversational capabilities and user experience.</p>
+<div class="border-t border-gray-800 pt-3 flex flex-col space-y-2">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">calendar_today</span>
+<span>Apr 17, 2023 - Dec 23, 2023</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">person</span>
+<span>Upwork Client (Spain, Alicante)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Rasa</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Python</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Automation</span>
+</div>
+</div>
+<div class="bg-[#191920] p-6 rounded-2xl border border-gray-800 flex flex-col space-y-5 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-green-500/10 text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-500/30">UPWORK</span>
+</div>
+<div class="flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-yellow-400 text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-white font-semibold text-sm">5.0</span>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-white leading-tight">Participants for Python Programming Study with Flask</h3>
+<div class="space-y-3 text-sm text-gray-400 flex-grow">
+<p>Contributed to a programming study focused on Python and Flask, providing expertise and completing development tasks efficiently.</p>
+<div class="border-t border-gray-800 pt-3 flex flex-col space-y-2">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">calendar_today</span>
+<span>Jul 22, 2024 - Jul 23, 2024</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">person</span>
+<span>Upwork Client</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Python</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Flask</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Web Development</span>
+</div>
+</div>
+<div class="bg-[#191920] p-6 rounded-2xl border border-gray-800 flex flex-col space-y-5 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-green-500/10 text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-500/30">UPWORK</span>
+</div>
+<div class="flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-yellow-400 text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-white font-semibold text-sm">5.0</span>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-white leading-tight">Front-end Specialist for Chatbot Webchat Issues</h3>
+<div class="space-y-3 text-sm text-gray-400 flex-grow">
+<p>Resolved complex front-end issues for a chatbot's webchat interface, improving user interaction and overall stability.</p>
+<div class="border-t border-gray-800 pt-3 flex flex-col space-y-2">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">calendar_today</span>
+<span>Jun 20, 2024 - Oct 15, 2024</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">person</span>
+<span>Upwork Client (Spain, Alicante)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Vite</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Webchat Integration</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Web Development</span>
+</div>
+</div>
+<div class="bg-[#191920] p-6 rounded-2xl border border-gray-800 flex flex-col space-y-5 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="bg-green-500/10 text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-500/30">UPWORK</span>
+</div>
+<div class="flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-yellow-400 text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-white font-semibold text-sm">5.0</span>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-white leading-tight">Azure OpenAI Set UP with APIs Connection</h3>
+<div class="space-y-3 text-sm text-gray-400 flex-grow">
+<p>Configured Azure OpenAI services, including model deployment and API connections, to power intelligent applications.</p>
+<div class="border-t border-gray-800 pt-3 flex flex-col space-y-2">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">calendar_today</span>
+<span>May 29, 2024 - Oct 9, 2024</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-base text-gray-500">person</span>
+<span>Upwork Client</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Azure OpenAI</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">API Integration</span>
+<span class="bg-primary/10 text-primary/80 text-xs font-medium px-3 py-1.5 rounded-full border border-primary/20">Python</span>
 </div>
 </div>
 </div>
 </main>
-<footer class="mt-20 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
-<div class="container mx-auto max-w-7xl text-center">
-<h2 class="text-2xl font-bold text-white dark:text-white mb-2">FIND ME ON</h2>
-<p class="text-gray-400 dark:text-gray-400 mb-6">Feel free to connect with me</p>
-<div class="flex justify-center items-center space-x-4">
-<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all" href="#">
-<img alt="GitHub icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaigvXKrZRNLBJhAyDHtxXuzPgKtPcMJ22XCyxyAlrgJJBBpz21EUOnoxoroKq8UTCbr_C3QQ2lRfeO-eXZThNP1-NDxhmuCwOoIpttbREKtzQM6EAPfXMJ0XdBfrPn2zA1tP5_texGVnuN2juxo6HYN4HHGquBhSfDa_HFHp_GkJTlEx5TesiGhWYXIvkAA9aUAfRE_xXycO2zUAuHKLt_mhFW7VdOeLBAiVUihdaVwva2KIRdqzdgnIZ7ppxKuNX0iwRps2tsnA"/>
+<footer class="text-center mt-24 py-12 border-t border-gray-800">
+<h2 class="text-2xl font-bold text-white mb-2">FIND ME ON</h2>
+<p class="text-gray-400 mb-6">Feel free to connect with me</p>
+<div class="flex justify-center space-x-4">
+<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors" href="#">
+<img alt="Github icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_3N4eHHIXFWBjuL1oaqQYQ60yYkdISsrxPIFTkLglWfWh5bRSZeMevsXG064mPJpeYBMtUfrF0xuBfJmkNQfX8Ayw-QFIoFwljUT4UNKbb0-MWN3QWahy9sCIXihuXp_u5BlmOuzhhEaXHLNkdid1c2yZgTMJi_228IaqOwucB2e71tTBdyVGmSdPcty8fZvKOb1Dt71gDLflbxMD24oGbeknie6Nml8aZReeGHMN-evvcLZ4jJOOaqRECzeYS6iOzO6rOhOHOeQ"/>
 </a>
-<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all" href="#">
-<img alt="Website icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4BmyUw4AsFKGHkfKy35atZsPQuEl2oXTVZZAfoW4vExWyHGbZchBWb3Lt9dLAvTPPLotC6vsxLo5VMqtyOdL_LgO_cc-B-XJgw6VAaNwWudAZ3jkOcu445Cwvz7LiTC3HpKdJ8V4x0hUSxk629cHZymspStau2uLxNfYS5EiMZINKaHVcnVIRycLNuLSdWHNQoAfyLWvK0NWNbWQkXANhJfgeucKvTHQ7M1R19j0EztIDWTProCvJ270E2FHut6Tv2WatIlOLNUM"/>
+<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors" href="#">
+<img alt="Website icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYVCu2lZkogAVd-zV8iLskTPKTjCEQztBz41tOBCtzZTTfjqBa53_u85-KszwH5DaMbzHAWReQC7yOBYbIW9ybYl4slZ5mCXtCoE_ysxQFcNM6pgQ21ZsR6GHmWWHwe6Vr-ak_ZMYSs9-LtgLCQF-wShH2sdal70yXuhc7ShVYpxUWAQwPeJtX3YGt1ifYSFtmbYClZr0DZLjOuXfPBRQFj7gdmpCpV6FydW_K3QFpKA9VNhYusKssojPRio5i3XynFrdRPsjpI84"/>
 </a>
-<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all" href="#">
-<img alt="LinkedIn icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBat5TMhO4zKmpZ75M8OuOvkpCwqtYydywLQIA0sRSIEqP0qQ5FWszE_-0Hz03g2arhPt9ZurLI9gZ61iqz9XOM03Xq5Q4fJIfMhNTC7Pcha9vLcFpP6YF-0CfcD1IkiJMGFHEBK5wsfUkvunlivGwF0lY__poUbXl2tfvYuZxbBqs0_y0b8T-bsN3ECg1rxakcPSnNpg1QgCO_bLPlA8nOMTOf3HBKDyfXzUyVt75DJnCH482dRxEj1Twy3VJAaYQEqmpFwFaqOYk"/>
+<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors" href="#">
+<img alt="LinkedIn icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPDb6gZqx7p9IGIEcz6AXTCqov5BagXf9ZdPUAC0A5PxUrIcqr0eWWtkwkhX3z6U2uqSylaQSsj3bzcutE0pIHrOfnAPhpMCk-zQ_7TX8GZ1Jhxd6fDpcqPC-mQ-ABGuSBCvLUkFIV3377FGlP0hjcTItefSOa1YxNB_yIgrQzqkmEIRKrsmSYodUVijg017t8AJQ1podoYUBPCHMOq6QIgZHy2P3_LixG7_niVNvG1q6wn0WiVFR1wvGObyQMciLGinvF7gBUxSA"/>
 </a>
-<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all" href="#">
-<img alt="Twitter icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnMCAWke9a3eX8fkif2Kg8mrpBummt-Uj_qfqQmZ4ogsOiknniPV27eBYJIOqWzQpMlJojaitnR13kRlfWRO7Z6usbAY6-iaxAl3h3LAuaR6w5A6XfHFTQDgIQwxsA4a-V-fsGJ5jLeFz2a9m6_Mq-EjUgyCVbNh1W-AC1T1_ktpSfkFuDpUVS-dq5RkHtRkj-9a7XI0rOL8ULLk6zuBKqKAkWIInmUxL6eCsoh1Me3rlQrybHQEDzGMNgdh5URzQKIEvQGtF5h9A"/>
+<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors" href="#">
+<img alt="Twitter icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfKxCVGlVrbMIpKzWmEM7MxMizec2mgeXAPGacqF4e_KkzWQ29ZP0FBArev5mjfmm9sxWL1542-qiWbag7O7gNjbAqnfi5MuUaQzM3BDHkUKEYoiIzzvnAB1TAv13bWYbKHh2A0HXwkOBl2hObO3DYSRXpWgbLA0GfhWHVBXxczA3xsXbTEiOQLnONG2f4ZSg0PFrkL5IhgiUVJueP5T2eyZiQybzSzkusGnn_1JXAV6n6YfOdEUi5MQ1cdkxLRGjgM6V75BpFtIc"/>
 </a>
-<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all" href="#">
-<img alt="Upwork icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlGw7zXsKk3EeksqznB6MiO3Mbx2_4vLLdCi0q_P6TmNXHCdi5SRa3MnAq396l0b9xi7aMEzO1-a-66eITsf_tWttooFeopVCAudo6pNxZsEXDulYq7lSp8DdTaGf84Ui32scq5bX393pzra5ARNnWDmhqh_gdBLL2vK4EF26ozd2y7e9EcCwTLVvbHMLTjloX4xIfHEZQTS0ohgr3OXyinm_PEutZApNNzBp3f5wBjee0fz6aHRR-MgGTW9QgjAJhKKWlBU4pUiE"/>
+<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 1000 1000" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M500,10c-270.6,0-490,219.4-490,490s219.4,490,490,490s490-219.4,490-490S770.6,10,500,10z M500,896.2c-218.8,0-396.2-177.4-396.2-396.2c0-218.8,177.4-396.2,396.2-396.2c218.8,0,396.2,177.4,396.2,396.2C896.2,718.8,718.8,896.2,500,896.2z M650.9,451.9v-7.8c-30.8-21.2-65.3-29.2-100.2-29.2c-50.3,0-89.9,13.9-89.9,64.6v3.7c0,58.5,86.2,53.2,86.2,81.1c0,16.4-17.5,26.7-44,26.7c-21.2,0-46.5-7.8-63.5-16.4l-11.3-5.2v50.3c23.7,12.7,53.2,20,83.6,20c60,0,94.9-20,94.9-61.1v-2.5c0-49.1-87.4-52-87.4-78.6c0-12.7,11.3-24.9,40.3-24.9c20,0,40.3,6.5,57.3,15.2l11.3,6.5V451.9z"></path></svg>
 </a>
-<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all" href="#">
-<img alt="Instagram icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe_1h6GrRZ6-ZQnxDMcSHGo6i8ADs_O9L2PMlE3gLVB7zboReS8zTWiIFWXN-hYoRvgnSwC6CV6xXkjxkk0Uu1cUmBvDqEkmFPPQiU8uWVx2-37XTIFIL76GJwBe1EgRT_kUu4c9HWIBn6ptkh__hjcJ3nKG0EoKfuZYc6R5XRGYPPkfm9qiN2nsm55URDQK3gBZEkoG9ASBrC7AsiZ0etX1PBrqLHQF3JgIpgIfqyeEFLmvglRwdplhSKHx9_31F5JiwfyNozYf0"/>
+<a class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors" href="#">
+<img alt="Instagram icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkEhKMihKeyUZ7QzIb6wj06Vn2mxdy4_-uk94M6DgM2DmLmiwaOEeEAd_umajNhMqNZpMWHIPSXqrUKRVXAo9nOknjyngResKEiD7MvMb918hFKoTSrizf74gQ43cnDHzR1utVnnhYQVCKWqm8MAW2UKbiXlKF01VGL7Z06aaDWvucWhkV5AsJWnvLh4a0UoeRupKLhNY07HA6sCl178fpkAIJLWM-39zy7qLW-5SXSJBMNd8WKYEGB-Nf3NivcIi43dwdsMo4Ltc"/>
 </a>
-</div>
 </div>
 </footer>
 </div>
-
 </body></html>

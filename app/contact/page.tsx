@@ -97,7 +97,8 @@ export default function ContactPage() {
           </motion.p>
         </motion.div>
 
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -347,6 +348,7 @@ export default function ContactPage() {
               </motion.button>
             </form>
           </motion.div>
+        </div>
         </div>
       </main>
       <Footer />
