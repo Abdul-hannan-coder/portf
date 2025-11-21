@@ -50,7 +50,7 @@ export default function ProjectsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-16 max-w-4xl mx-auto"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 text-glow">
             {projects.title}
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
           </p>
         </motion.div>
 
-        <div className="flex justify-center border-b border-gray-800 mb-12">
+        <div className="flex justify-center border-b border-gray-800 mb-12 max-w-7xl mx-auto">
           <div className="flex space-x-8">
             {projects.filters.platforms.map((platform) => (
               <motion.button
@@ -80,7 +80,7 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        <div className="space-y-6 mb-12">
+        <div className="space-y-6 mb-12 max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             <span className="font-semibold text-white w-28 text-sm uppercase tracking-wider">
               Category:
@@ -132,112 +132,124 @@ export default function ProjectsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto"
         >
           {filteredProjects.map((project, index) => (
             <Link
               key={index}
               href={`/projects/${project.slug || project.title.toLowerCase().replace(/\s+/g, "-")}`}
+              className="block h-full"
             >
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{
-                  scale: 1.02,
-                  y: -5,
+                  scale: 1.03,
+                  y: -8,
                 }}
-                className="bg-[#141419] p-6 rounded-2xl border border-gray-800 flex flex-col space-y-4 transition-all hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 cursor-pointer"
+                className="bg-[#141419] p-6 lg:p-8 rounded-2xl border border-gray-800/50 flex flex-col h-full transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 cursor-pointer group"
               >
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <span className="bg-green-500 text-black text-xs font-bold px-2 py-1 rounded">
-                    {project.platform}
-                  </span>
-                  {project.featured && (
-                    <span className="bg-orange-400 text-black text-xs font-bold px-2 py-1 rounded">
-                      Featured
+                {/* Header Section */}
+                <div className="flex justify-between items-start mb-5">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="bg-green-500 text-black text-xs font-bold px-3 py-1.5 rounded-full">
+                      {project.platform}
                     </span>
-                  )}
+                    {project.featured && (
+                      <span className="bg-orange-400 text-black text-xs font-bold px-3 py-1.5 rounded-full">
+                        Featured
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-center space-x-1 bg-gray-800/60 px-2.5 py-1.5 rounded-lg">
+                    {renderStars(project.rating)}
+                    <span className="text-white font-semibold text-sm ml-1">
+                      {project.rating}
+                    </span>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-1">
-                  {renderStars(project.rating)}
-                  <span className="text-white font-semibold text-sm">
-                    {project.rating}
-                  </span>
-                </div>
-              </div>
 
-              <h3 className="text-xl font-semibold text-white hover:text-primary transition-colors">
-                {project.title}
-              </h3>
+                {/* Title */}
+                <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors line-clamp-2 min-h-[3.5rem]">
+                  {project.title}
+                </h3>
 
-              <div className="flex items-center space-x-4 text-sm text-gray-400">
-                <div className="flex items-center space-x-1.5">
-                  <span
-                    className="material-icons-outlined text-base text-emerald-400"
-                    style={materialIconsOutlined}
-                  >
-                    category
-                  </span>
-                  <span>{project.category}</span>
-                </div>
-                <div className="flex items-center space-x-1.5">
-                  <span
-                    className="material-icons-outlined text-base text-emerald-400"
-                    style={materialIconsOutlined}
-                  >
-                    calendar_today
-                  </span>
-                  <span>{project.date}</span>
-                </div>
-              </div>
-
-              {project.client.feedback ? (
-                <div className="bg-emerald-900/40 border border-emerald-400/20 p-4 rounded-lg text-sm text-gray-300 italic relative">
-                  <div className="absolute -top-3 left-4 bg-[#141419] px-2 flex items-center gap-2">
+                {/* Meta Information */}
+                <div className="flex flex-col gap-2.5 mb-5 text-sm text-gray-400">
+                  <div className="flex items-center space-x-2">
                     <span
-                      className="material-icons-outlined text-emerald-400 text-lg"
+                      className="material-icons-outlined text-emerald-400 text-base"
                       style={materialIconsOutlined}
                     >
-                      person
+                      category
                     </span>
-                    <span className="text-emerald-400 font-medium">
-                      {project.client.name}
-                    </span>
+                    <span className="font-medium">{project.category}</span>
                   </div>
-                  <p>&quot;{project.client.feedback}&quot;</p>
-                </div>
-              ) : project.client.description ? (
-                <div className="border border-gray-700 p-4 rounded-lg text-sm text-gray-300 flex-grow">
-                  <ul className="space-y-2 list-disc list-inside">
-                    {project.client.description.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </ul>
-                  <div className="text-center mt-3">
-                    <a
-                      className="text-emerald-400 font-medium hover:text-emerald-300"
-                      href="#"
+                  <div className="flex items-center space-x-2">
+                    <span
+                      className="material-icons-outlined text-emerald-400 text-base"
+                      style={materialIconsOutlined}
                     >
-                      View More
-                    </a>
+                      calendar_today
+                    </span>
+                    <span className="text-xs">{project.date}</span>
                   </div>
                 </div>
-              ) : null}
 
-              <div className="flex flex-wrap gap-2 pt-2">
-                {project.tags.map((tag, tagIndex) => (
-                  <motion.span
-                    key={tagIndex}
-                    whileHover={{ scale: 1.1 }}
-                    className="bg-blue-600/50 text-blue-300 text-xs font-medium px-2.5 py-1 rounded"
-                  >
-                    {tag}
-                  </motion.span>
-                ))}
-              </div>
-            </motion.div>
+                {/* Client Feedback or Description */}
+                <div className="mb-5 flex-grow">
+                  {project.client?.feedback ? (
+                    <div className="bg-emerald-900/20 border border-emerald-400/20 p-4 rounded-lg text-sm text-gray-300 relative">
+                      <div className="absolute -top-2.5 left-4 bg-[#141419] px-2 flex items-center gap-1.5 rounded-full border border-emerald-400/20">
+                        <span
+                          className="material-icons-outlined text-emerald-400 text-sm"
+                          style={materialIconsOutlined}
+                        >
+                          person
+                        </span>
+                        <span className="text-emerald-400 font-medium text-xs">
+                          {project.client.name}
+                        </span>
+                      </div>
+                      <p className="pt-3 italic line-clamp-3 text-xs leading-relaxed">
+                        &quot;{project.client.feedback}&quot;
+                      </p>
+                    </div>
+                  ) : project.client?.description ? (
+                    <div className="border border-gray-700/30 bg-gray-800/10 p-4 rounded-lg text-sm text-gray-300">
+                      <ul className="space-y-1.5 list-disc list-inside">
+                        {project.client.description.slice(0, 2).map((item, idx) => (
+                          <li key={idx} className="text-xs leading-relaxed">{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                </div>
+
+                {/* Tags Section - Better positioned at bottom */}
+                <div className="mt-auto pt-5 border-t border-gray-800/30">
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.slice(0, 4).map((tag, tagIndex) => (
+                      <motion.span
+                        key={tagIndex}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: index * 0.1 + tagIndex * 0.05 }}
+                        whileHover={{ scale: 1.05 }}
+                        className="bg-blue-600/20 text-blue-300 text-xs font-medium px-3 py-1.5 rounded-full border border-blue-500/20 hover:bg-blue-600/30 hover:border-blue-400/40 transition-all cursor-default"
+                      >
+                        {tag}
+                      </motion.span>
+                    ))}
+                    {project.tags.length > 4 && (
+                      <span className="bg-gray-700/30 text-gray-400 text-xs font-medium px-3 py-1.5 rounded-full">
+                        +{project.tags.length - 4}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
             </Link>
           ))}
         </motion.div>

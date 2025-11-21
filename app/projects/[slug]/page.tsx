@@ -53,12 +53,12 @@ export default function ProjectDetailPage({
   return (
     <div className="w-full min-h-screen bg-background-light dark:bg-background-dark">
       <Header />
-      <main className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <main className="w-full px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-12"
+          className="max-w-7xl mx-auto mb-12"
         >
           <Link
             href="/projects"
@@ -79,7 +79,7 @@ export default function ProjectDetailPage({
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
-          className="bg-gray-100/5 dark:bg-gray-800/20 p-8 md:p-12 rounded-lg border border-gray-700/50"
+          className="bg-gray-100/5 dark:bg-gray-800/20 p-8 md:p-12 rounded-lg border border-gray-700/50 max-w-7xl mx-auto"
         >
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main Content */}
