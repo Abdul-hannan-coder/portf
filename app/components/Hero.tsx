@@ -31,7 +31,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="py-20 md:py-32 overflow-hidden">
+    <section className="w-full py-20 md:py-32 overflow-hidden">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           variants={containerVariants}

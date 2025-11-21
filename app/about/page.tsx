@@ -4,8 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import portfolioData from "../../data/portfolio.json";
 
 export default function AboutPage() {
@@ -15,9 +13,7 @@ export default function AboutPage() {
 
   return (
     <div className="w-full min-h-screen bg-background-light dark:bg-background-dark">
-      <Header />
-      <main className="w-full px-4 sm:px-6 lg:px-8 py-12 md:py-24">
-        <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           <motion.div
             ref={ref}
@@ -98,9 +94,7 @@ export default function AboutPage() {
             </div>
           </motion.div>
         </div>
-        </div>
-      </main>
-      <Footer />
+      </div>
     </div>
   );
 }

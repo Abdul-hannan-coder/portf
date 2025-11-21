@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -43,7 +45,13 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${inter.variable} font-display bg-background-light dark:bg-background-dark text-gray-700 dark:text-gray-300 antialiased`}
       >
-        {children}
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

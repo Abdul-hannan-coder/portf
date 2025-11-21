@@ -65,10 +65,10 @@ export default function Footer() {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6 }}
-      className="text-center py-16 bg-gray-100 dark:bg-gray-900/50 rounded-lg mt-16 backdrop-blur-sm relative overflow-hidden"
+      className="w-full text-center py-16 bg-gray-100 dark:bg-gray-900/50 mt-16 backdrop-blur-sm relative overflow-hidden"
     >
       <div className="absolute inset-0 shimmer opacity-30"></div>
-      <div className="relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.h3
           initial={{ opacity: 0, scale: 0.8 }}
           animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}

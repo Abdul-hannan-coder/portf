@@ -5,8 +5,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import portfolioData from "../../data/portfolio.json";
 
 // Material Icons Outlined styles
@@ -31,9 +29,8 @@ export default function ProjectsPage() {
 
 
   return (
-    <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 bg-background-light dark:bg-background-dark min-h-screen">
-      <Header />
-      <main className="container mx-auto px-4 py-8">
+    <div className="w-full bg-background-light dark:bg-background-dark min-h-screen">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +46,7 @@ export default function ProjectsPage() {
           </p>
         </motion.div>
 
-        <div className="flex justify-center border-b border-gray-800 mb-12 max-w-7xl mx-auto">
+        <div className="flex justify-center border-b border-gray-800 mb-12 w-full">
           <div className="flex space-x-8">
             {projects.filters.platforms.map((platform) => (
               <motion.button
@@ -69,7 +66,7 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        <div className="space-y-6 mb-12 max-w-7xl mx-auto">
+        <div className="space-y-6 mb-12 w-full">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             <span className="font-semibold text-white w-28 text-sm uppercase tracking-wider">
               Category:
@@ -121,7 +118,7 @@ export default function ProjectsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full"
         >
           {filteredProjects.map((project, index) => (
             <Link
@@ -213,8 +210,7 @@ export default function ProjectsPage() {
             </Link>
           ))}
         </motion.div>
-      </main>
-      <Footer />
+      </div>
     </div>
   );
 }

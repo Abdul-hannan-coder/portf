@@ -4,8 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import portfolioData from "../../data/portfolio.json";
 
 export default function ContactPage() {
@@ -68,8 +66,7 @@ export default function ContactPage() {
 
   return (
     <div className="w-full min-h-screen bg-background-light dark:bg-background-dark">
-      <Header />
-      <main className="w-full px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -97,7 +94,7 @@ export default function ContactPage() {
           </motion.p>
         </motion.div>
 
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Information */}
           <motion.div
@@ -350,8 +347,7 @@ export default function ContactPage() {
           </motion.div>
         </div>
         </div>
-      </main>
-      <Footer />
+      </div>
     </div>
   );
 }
