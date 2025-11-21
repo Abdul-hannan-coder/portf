@@ -30,11 +30,18 @@ body {
 
 .timeline-item-connector {
   position: absolute;
-  top: 2.25rem;
-  left: 1.125rem;
+  top: 2rem;
+  left: 0.875rem;
   width: 2px;
   height: 100%;
   background-color: #374151;
+}
+
+@media (min-width: 640px) {
+  .timeline-item-connector {
+    top: 2.25rem;
+    left: 1.125rem;
+  }
 }
 
 .dark .timeline-item-connector {

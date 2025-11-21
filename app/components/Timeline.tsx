@@ -44,9 +44,9 @@ export default function Timeline() {
                 itemInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }
               }
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="relative flex items-start pl-16 mb-12 last:mb-0"
+              className="relative flex items-start pl-12 sm:pl-16 mb-8 sm:mb-12 last:mb-0"
             >
-              <div className="flex-shrink-0 w-9 text-center relative">
+              <div className="flex-shrink-0 w-8 sm:w-9 text-center relative">
                 {index < timeline.length - 1 && (
                   <motion.div
                     className="timeline-item-connector"
@@ -67,14 +67,14 @@ export default function Timeline() {
                     stiffness: 200,
                   }}
                   whileHover={{ scale: 1.2, rotate: 360 }}
-                  className={`flex items-center justify-center w-9 h-9 rounded-full ring-4 ${
+                  className={`flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-full ring-2 sm:ring-4 ${
                     item.iconColor === "teal"
                       ? "bg-teal-400/20 dark:bg-teal-400/10 ring-teal-400/30"
                       : "bg-amber-400/20 dark:bg-amber-400/10 ring-amber-400/30"
                   }`}
                 >
                   <span
-                    className={`material-icons ${
+                    className={`material-icons text-sm sm:text-base ${
                       item.iconColor === "teal"
                         ? "text-teal-400"
                         : "text-amber-400"
@@ -94,21 +94,21 @@ export default function Timeline() {
                   scale: 1.02,
                   boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
                 }}
-                className="ml-6 w-full bg-gray-50 dark:bg-gray-900/50 p-6 rounded-lg border border-gray-200 dark:border-gray-800 shadow-sm transition-all duration-300"
+                className="ml-3 sm:ml-6 w-full bg-gray-50 dark:bg-gray-900/50 p-4 sm:p-6 rounded-lg border border-gray-200 dark:border-gray-800 shadow-sm transition-all duration-300"
               >
                 <h3
-                  className={`text-xl font-semibold ${
+                  className={`text-lg sm:text-xl font-semibold ${
                     item.iconColor === "teal" ? "text-teal-400" : "text-amber-400"
                   }`}
                 >
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-4 flex flex-wrap gap-x-4 gap-y-2">
+                <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-2 mb-4 flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-x-4">
                   <span className="flex items-center">
                     <span className="material-icons text-red-500 text-sm mr-1.5">
                       location_on
                     </span>
-                    {item.location}
+                    <span className="break-words">{item.location}</span>
                   </span>
                   <span className="flex items-center">
                     <span className="material-icons text-gray-400 text-sm mr-1.5">
@@ -116,8 +116,8 @@ export default function Timeline() {
                     </span>
                     {item.period}
                   </span>
-                </p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400">
+                </div>
+                <ul className="list-disc pl-4 sm:pl-5 space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                   {item.description.map((desc, descIndex) => (
                     <motion.li
                       key={descIndex}
@@ -131,16 +131,17 @@ export default function Timeline() {
                         duration: 0.3,
                         delay: index * 0.2 + 0.5 + descIndex * 0.05,
                       }}
+                      className="leading-relaxed"
                     >
                       {desc}
                     </motion.li>
                   ))}
                 </ul>
-                <div className="mt-6">
-                  <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                <div className="mt-4 sm:mt-6">
+                  <h4 className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">
                     SKILLS:
                   </h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     {item.skills.map((skill, skillIndex) => (
                       <motion.span
                         key={skillIndex}
@@ -161,7 +162,7 @@ export default function Timeline() {
                           scale: 1.1,
                           backgroundColor: "rgba(20, 184, 166, 0.2)",
                         }}
-                        className="bg-teal-500/10 text-teal-400 text-sm px-3 py-1 rounded-md border border-teal-500/20 cursor-default transition-all duration-300"
+                        className="bg-teal-500/10 text-teal-400 text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-md border border-teal-500/20 cursor-default transition-all duration-300"
                       >
                         {skill}
                       </motion.span>
