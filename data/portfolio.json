@@ -1,22 +1,18 @@
 {
   "personal": {
-    "name": "Mian Mansoor Ahmad",
-    "initials": "M",
-    "title": "Agentic Chatbot",
-    "subtitle": "Transforming ideas into intelligent solutions through AI innovation and strategic leadership. Specialized in building advanced conversational systems and LLM-powered applications.",
-    "tagline": "Agentic Chatbot |",
-    "profileImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAkpaFekK7BdwnNPh2-1FFeABRBC79ASOITCXYjVHDt0-lzwavDNcyqAuvLx5Il-se9O5Y7zabcj_w9TT3kD2B9Uebra0spVZ_s6rbui5utqSfQoQVVnkLwDDww9fE9V4t8NgQTRooPY2LS8WLis4fDYZzQUvxnET46bjMF4rDIV3d_CeKuFgpq9jpz-99B3AuoDM1fG77G2NrwTxWyk7rsbv62eWWCshq1DS8PRYTjng67RCaBky5CkbbyNck3JUqdb0mn9ewtnlo",
-    "heroImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAONofLSaBklXuUbG-yynzewE88u7XfoxHGggMqFv4qxN9VFGRSGftKSTjpT-9o6_1G8oSeQlnXQaIlpgmlJF25LskyZNE6BkGg3Ris3ttNA7zU2vnGy_Rm_mxZJFDkitfWCcPEDPpd7KKaIWm8TMPlOCwf4Ox7SB6WTjBk-YLbZUL1OYbYatIL3cfLIEOnMwr0aRA869qJtIYPjkLzeNpxSXJ8yos5zEEP-xjVVqU5dLJ09sbBXMwBKdmUOzkzYBbibLYeKqqGsIo"
+    "name": "Abdul Hannan",
+    "initials": "AH",
+    "title": "Frontend Engineer | Automation and Gohighlevel Expert ",
+    "subtitle": "I specialize in building high-performance, scalable web applications and automating business processes using Gohighlevel. With a strong background in frontend development and a passion for creating seamless user experiences, I help businesses enhance their online presence and streamline operations through innovative solutions.",
+    "tagline": "Frontend Engineer | Automation and Gohighlevel Expert",
+    "profileImage": "https://i.ibb.co/Fk6n3txW/cd8b3a5aaac0.jpg",
+    "heroImage": "https://i.ibb.co/Fk6n3txW/cd8b3a5aaac0.jpg"
   },
   "about": {
     "title": "Meet",
-    "highlightedTitle": "MANSOOR",
+    "highlightedTitle": "ABDUL HANNAN",
     "paragraphs": [
-      "A journey that began with physics and nanotechnology led me to discover the transformative power of <span class=\"font-semibold text-primary\">Artificial Intelligence</span>, turning a curiosity into a passionate career.",
-      "Today, I'm at the forefront of <span class=\"font-semibold text-primary\">AI Innovation</span>, specializing in <span class=\"font-semibold text-primary\">Large Language Models</span> and <span class=\"font-semibold text-primary\">Retrieval Augmented Generation</span>.",
-      "As an entrepreneur, I'm <span class=\"font-semibold text-primary\">revolutionizing chatbot industry</span> with AI and <span class=\"font-semibold text-primary\">building enterprise-grade conversational systems</span> at Convsol.",
-      "My work combines cutting-edge research in <span class=\"font-semibold text-primary\">Natural Language Processing</span> with <span class=\"font-semibold text-primary\">Cloud-Native Architecture</span>, delivering scalable AI solutions that make a real-world impact.",
-      "Currently building <span class=\"font-semibold text-primary\">AI Agents</span> and enhancing <span class=\"font-semibold text-primary\">Conversational AI</span> at Convsol."
+      "I am a passionate and dedicated software engineer with a strong background in frontend development and automation. With over 2 years of experience in the industry, I have honed my skills in building high-performance web applications and automating business processes using Gohighlevel. My expertise lies in creating seamless user experiences and helping businesses enhance their online presence through innovative solutions. I am committed to continuous learning and staying up-to-date with the latest technologies to deliver exceptional results for my clients."
     ]
   },
   "navigation": [
@@ -30,51 +26,45 @@
       "type": "work",
       "icon": "computer",
       "iconColor": "teal",
-      "title": "Founder & AI Engineer",
-      "location": "ConvSol",
-      "period": "May 2022 - Present",
+      "title": "Frontend Engineer | Automation Expert",
+      "location": "Lahore, Pakistan",
+      "period": "Present",
       "description": [
-        "Design, develop and deploy Agentic Chatbot Systems backed with LLMs",
-        "Hierarchical Agentic Systems to handle different conversation flows and tasks",
-        "Fine-tune LLMs according to conversation requirements and for specialized outputs",
-        "RAG techniques to call custom functions, connecting external databases, APIs and tracker stores",
-        "Creative prompt engineering for LLMs to improve chatbot's performance",
-        "Integrate with messaging platforms to handle different channels and languages"
+        "Design and develop high-performance web applications using modern frontend technologies.",
+        "Automate business processes and workflows using Gohighlevel to enhance operational efficiency.",
+        "Collaborate with cross-functional teams to deliver seamless user experiences and innovative solutions.",
+        "Stay up-to-date with the latest industry trends and technologies to continuously improve skills and deliver exceptional results."
       ],
       "skills": [
-        "Agentic Chatbot System",
-        "LLMs",
-        "Agentic Systems",
-        "RAG",
-        "Prompt Engineering",
-        "API Integration",
-        "Micro-services",
-        "Kubernetes",
+        "Next.js",
+        "React",  
+        "Gohighlevel Automation",
+        "N8N , Make , Zapier Automation",
+        "Redux",
+        "Tailwind CSS",
         "Docker",
-        "Open Source LLMs",
-        "Hybrid Architecture",
-        "NLU Pipeline",
-        "Chatbot Assistant"
+        "Vercel",
+        "Cloud Deployment (AWS, Oracle Cloud, Azure)",
+        "Collaboration and Communication"
       ]
     },
     {
       "type": "education",
       "icon": "school",
       "iconColor": "amber",
-      "title": "Master of Science in Computer Science",
-      "location": "National University of Science and Technology, H-12, Islamabad",
-      "period": "Sep 2021 - Feb 2025",
+      "title": "Bachelors in Computer Science",
+      "location": "Virtual University of Pakistan",
+      "period": "Sep 2024  - Feb 2028",
       "description": [
-        "Core Courses: Mathematical Methods for Computing, Advanced Algorithm Analysis, Advanced Operating Systems, Advanced Theory of Computation",
-        "Specialization Courses: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Big Data Analytics, Large Language Models",
+        "Core Courses: Data Structures and Algorithms, Operating Systems, Database Systems, Software Engineering, Computer Networks, Artificial Intelligence",
+        "Specialization Courses: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Big Data",
         "Audit Courses: Cloud Computing, Semantic Web"
       ],
       "skills": [
+        "Computer Science Fundamentals",
+        "Software Development",
         "Machine Learning",
-        "Deep Learning",
-        "NLP",
-        "Computer Vision",
-        "Big Data",
+        "Artificial Intelligence",
         "Cloud Computing"
       ]
     },
@@ -82,41 +72,40 @@
       "type": "education",
       "icon": "school",
       "iconColor": "amber",
-      "title": "Bachelor of Science in Physics",
-      "location": "National University of Science and Technology, H-12, Islamabad",
-      "period": "Sep 2014 - Aug 2018",
+      "title": "Diploma in Computer Imforamation Technology",
+      "location": "Pak Polytechnic Institute, Lahore",
+      "period": "Sep 2020 - Aug 2023",
       "description": [
-        "Minor in Nanotechnology",
-        "FYP on 2d-Mxene hybrid Thermoelectric Materials",
-        "GPA: 3.2"
+        "Core Courses: Programming Fundamentals, Data Structures, Database Management, Web Development, Computer Networks",
+        "Specialization Courses: Web Application with java , Network Security , Database Management with MySQL ",
+        "Audit Courses: Physics"  
       ],
       "skills": [
-        "Physics",
-        "Nanotechnology",
-        "Thermoelectric Materials",
-        "Research"
+        "Programming Fundamentals",
+        "Data Structures",
+        "Database Management",
+        "Web Development",
+        "Computer Networks",
+        "Web Application Development",
+        "Network Security",
+        "MySQL"
       ]
     }
   ],
   "social": [
     {
       "name": "GitHub",
-      "href": "#",
+      "href": "https://github.com/Abdul-hannan-coder ",
       "icon": "github"
     },
     {
       "name": "LinkedIn",
-      "href": "#",
+      "href": "https://www.linkedin.com/in/abdul-hannan-bhatti/",
       "icon": "linkedin"
     },
     {
-      "name": "X (Twitter)",
-      "href": "#",
-      "icon": "x"
-    },
-    {
       "name": "Email",
-      "href": "#",
+      "href": "abdulhannan.personal@gmail.com",
       "icon": "email"
     }
   ],
@@ -174,7 +163,7 @@
           "Ensure high performance and reliability."
         ],
         "detailedDescription": "Mian did a great job on a LAMP REST API development with Amazon Web Services. The project involved creating a comprehensive RESTful API using Python, setting up the LAMP stack on AWS EC2 instances, and implementing proper security measures. The API was designed to handle high traffic loads and provided excellent performance throughout the development process.",
-        "image": null,
+        "image": "https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_stacked_REV_SQ.91cd4af40773cbfbd15577a3c2b8a346fe3e8fa2.png",
         "technologies": ["Python", "LAMP Stack", "REST API", "AWS", "AWS EC2", "Linux", "Apache", "MySQL"]
       },
       {
@@ -198,7 +187,7 @@
           "Customize chatbot functionalities based on specific requirements."
         ],
         "detailedDescription": "Mian is specialized in Rasa Open Source and his expertise in customizing functionalities and adeptness in both cloud and on-premise was exactly what we needed. The project involved developing a sophisticated chatbot using RASA framework, integrating it with ChatGPT for enhanced conversational abilities, and deploying it across multiple environments. The solution provided excellent user experience and met all our requirements.",
-        "image": null,
+        "image": "https://rasa.com/static/rasa-logo-twitter-card-1200x630-2022-11-22-d8b3d91f3c7ecb1bc17d0e1df9da7e47.png",
         "technologies": ["Rasa", "Python", "ChatGPT", "NLU", "Docker", "API Integration"]
       },
       {
@@ -221,7 +210,7 @@
           "Create a functional study platform."
         ],
         "detailedDescription": "Very good communication, delivered on time. It was nice working with you! This project involved creating a Python programming study platform using Flask, implementing clean code practices and delivering a functional web application.",
-        "image": null,
+        "image": "https://miro.medium.com/v2/resize:fit:438/1*0G5zu7CnXdMT9pGbYUTQLQ.png",
         "technologies": ["Python", "Flask", "Web Development", "HTML", "CSS"]
       },
       {
@@ -244,7 +233,7 @@
           "Integrate with existing backend systems."
         ],
         "detailedDescription": "Great freelancer! Always a pleasure working with him. This project involved front-end development work on a chatbot webchat interface, fixing issues, improving user experience, and ensuring seamless integration with backend systems.",
-        "image": null,
+        "image": "https://vitejs.dev/logo-with-shadow.png",
         "technologies": ["Vite", "Webchat Integration", "Web Development", "JavaScript", "React"]
       },
       {
@@ -272,12 +261,80 @@
           "API connection setup and configuration"
         ],
         "detailedDescription": "This project involved setting up the Azure OpenAI platform, deploying and configuring AI models, and establishing secure API connections. The setup included proper authentication, rate limiting, and monitoring to ensure reliable access to OpenAI services through Azure infrastructure.",
-        "image": null,
+        "image": "https://swimburger.net/media/ppnn3pcl/azure.png",
         "technologies": ["Azure OpenAI", "API Integration", "Python", "Azure", "REST API"]
       }
     ]
-  },
-  "footer": {
+  },  "certifications": [
+    {
+      "title": "Next.js & React - The Complete Guide",
+      "issuer": "Udemy",
+      "date": "2024",
+      "credentialId": "UC-XXXXXXXX",
+      "icon": "verified",
+      "iconColor": "blue",
+      "image": "https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",
+      "skills": [
+        "Next.js",
+        "React",
+        "Server Components",
+        "API Routes",
+        "App Router"
+      ],
+      "description": "Comprehensive course covering Next.js 14, React 18, Server Components, and modern web development practices."
+    },
+    {
+      "title": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "credentialId": "AWS-SAA-XXXXXXXX",
+      "icon": "cloud",
+      "iconColor": "orange",
+      "image": "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+      "skills": [
+        "AWS",
+        "Cloud Architecture",
+        "EC2",
+        "S3",
+        "Lambda"
+      ],
+      "description": "Professional certification demonstrating expertise in designing and deploying scalable systems on AWS."
+    },
+    {
+      "title": "GoHighLevel Automation Expert",
+      "issuer": "GoHighLevel Academy",
+      "date": "2023",
+      "credentialId": "GHL-XXXXXXXX",
+      "icon": "autorenew",
+      "iconColor": "green",
+      "image": "https://www.gohighlevel.com/hs-fs/hubfs/ghl-logo-2.png",
+      "skills": [
+        "GoHighLevel",
+        "Marketing Automation",
+        "CRM",
+        "Workflow Automation",
+        "Lead Generation"
+      ],
+      "description": "Advanced certification in GoHighLevel platform automation, CRM management, and marketing workflow optimization."
+    },
+    {
+      "title": "Docker & Kubernetes: The Complete Guide",
+      "issuer": "Udemy",
+      "date": "2023",
+      "credentialId": "UC-YYYYYYYY",
+      "icon": "settings",
+      "iconColor": "teal",
+      "image": "https://img-c.udemycdn.com/course/240x135/1793828_7999_6.jpg",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "Container Orchestration",
+        "DevOps",
+        "CI/CD"
+      ],
+      "description": "Mastery in containerization, orchestration, and deployment strategies using Docker and Kubernetes."
+    }
+  ],  "footer": {
     "title": "FIND ME ON",
     "subtitle": "Feel free to <span class=\"text-primary\">connect</span> with me"
   }

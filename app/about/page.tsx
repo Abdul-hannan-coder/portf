@@ -28,7 +28,7 @@ export default function AboutPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white"
             >
-              Meet <span className="text-primary">MANSOOR</span>
+              Meet <span className="text-primary">{personal.name}</span>
             </motion.h2>
             {about.paragraphs.map((paragraph, index) => (
               <motion.p
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <Image
                   alt={`Profile picture of ${personal.name}`}
                   className="relative w-full h-full object-cover rounded-full border-4 border-background-light dark:border-background-dark z-10"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1X04fxetNxUXPyVl5mE10kQ3DOiurhLiKkkP82gBUDT937WRqnfoK4Il0pMZMEp2_YnFRVyMrfoAQNDHmAlGIgfCQbkX3gptS-DHDutX3CB4L3LjyBg6OJHdFowcDv4CmewpEAq5Xw9Qvs01giI0KTI0Tg_PlHDdEnuCqNR39OUcFfPCDZnOU6KdZQRSBDXMmer4EsHiGo-2IypC9cKrIHsb0PeZLWDvq8Ot5lTEtZXFRBKaBs97MMANCR1D8aOPQ9NjwpNXMcSY"
+                  src={personal.profileImage}
                   width={384}
                   height={384}
                   unoptimized

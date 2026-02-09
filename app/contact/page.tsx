@@ -47,19 +47,19 @@ export default function ContactPage() {
     {
       icon: "email",
       label: "Email",
-      value: "mansoor@example.com",
-      href: "mailto:mansoor@example.com",
+      value: "abdulhannan.personal@gmail.com",
+      href: "mailto:abdulhannan.personal@gmail.com",
     },
     {
       icon: "phone",
       label: "Phone",
-      value: "+92 XXX XXXXXXX",
-      href: "tel:+92XXXXXXXXX",
+      value: "+923334688363",
+      href: "tel:+923334688363",
     },
     {
       icon: "location_on",
       label: "Location",
-      value: "Islamabad, Pakistan",
+      value: "Lahore, Pakistan",
       href: "#",
     },
   ];
