@@ -1,15 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import portfolioData from "../../data/portfolio.json";
 
 export default function Certifications() {
   const { certifications } = portfolioData;
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [hoveredImage, setHoveredImage] = useState<string | null>(null);
 
   return (
     <section ref={ref} className="w-full py-20 md:py-32">
@@ -60,15 +61,21 @@ export default function Certifications() {
                       : { opacity: 0, y: -20 }
                   }
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="relative w-full h-48 bg-gray-200 dark:bg-gray-800"
+                  className="relative w-full h-48 bg-gray-200 dark:bg-gray-800 cursor-pointer group"
+                  onClick={() => setHoveredImage(cert.image)}
                 >
                   <Image
                     src={cert.image}
                     alt={cert.title}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                     unoptimized
                   />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="bg-white/90 dark:bg-gray-900/90 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
+                      <span className="material-icons text-primary text-3xl">zoom_in</span>
+                    </div>
+                  </div>
                 </motion.div>
               )}
               <div className="flex items-start gap-4 p-6">
@@ -185,6 +192,47 @@ export default function Certifications() {
           );
         })}
       </div>
+
+      {/* Image Preview Modal */}
+      <AnimatePresence>
+        {hoveredImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+            onClick={() => setHoveredImage(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3, type: "spring", stiffness: 300 }}
+              className="relative max-w-4xl max-h-[90vh] w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="relative w-full h-[80vh] bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-2xl">
+                <Image
+                  src={hoveredImage}
+                  alt="Certificate Preview"
+                  fill
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+              <motion.button
+                whileHover={{ scale: 1.1, rotate: 90 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setHoveredImage(null)}
+                className="absolute -top-4 -right-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:bg-primary/90 transition-colors"
+              >
+                <span className="material-icons">close</span>
+              </motion.button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

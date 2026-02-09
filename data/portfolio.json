@@ -267,73 +267,57 @@
     ]
   },  "certifications": [
     {
-      "title": "Next.js & React - The Complete Guide",
-      "issuer": "Udemy",
+      "title": "AI For Everyone",
+      "issuer": "Coursera",
       "date": "2024",
       "credentialId": "UC-XXXXXXXX",
       "icon": "verified",
       "iconColor": "blue",
-      "image": "https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",
+      "image": "https://i.ibb.co/FkfFYKxN/Ai-Essentials-page-0001.jpg",
       "skills": [
-        "Next.js",
-        "React",
-        "Server Components",
-        "API Routes",
-        "App Router"
+        "Artificial Intelligence",
+        "Machine Learning",
+        "AI Ethics",
+        "AI Strategy",
+        "AI Applications"
       ],
-      "description": "Comprehensive course covering Next.js 14, React 18, Server Components, and modern web development practices."
+      "description": "Comprehensive course covering the fundamentals of AI, its applications, and ethical considerations in the modern world."
     },
     {
-      "title": "AWS Certified Solutions Architect",
-      "issuer": "Amazon Web Services",
+      "title": "Introduction to Frontend Development",
+      "issuer": "Meta (Facebook)",
       "date": "2023",
       "credentialId": "AWS-SAA-XXXXXXXX",
       "icon": "cloud",
       "iconColor": "orange",
-      "image": "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+      "image": "https://i.ibb.co/PdSQHQS/Introduction-to-Front-End-Development-page-0001.jpg",
       "skills": [
-        "AWS",
-        "Cloud Architecture",
-        "EC2",
-        "S3",
-        "Lambda"
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Frontend Development"
       ],
-      "description": "Professional certification demonstrating expertise in designing and deploying scalable systems on AWS."
+      "description": "In-depth introduction to frontend development, covering essential technologies and frameworks for building responsive and interactive web applications."
     },
     {
-      "title": "GoHighLevel Automation Expert",
-      "issuer": "GoHighLevel Academy",
-      "date": "2023",
+      "title": "C++ Essentials",
+      "issuer": "Cisco Networking Academy",
+      "date": "2025",
       "credentialId": "GHL-XXXXXXXX",
       "icon": "autorenew",
       "iconColor": "green",
-      "image": "https://www.gohighlevel.com/hs-fs/hubfs/ghl-logo-2.png",
+      "image": "https://i.ibb.co/vxKg41Pc/certificate-bc240410806aha-vu-edu-pk-2a826796-73b5-4e40-b226-74153d8a8b1b-page-0001.jpg",
       "skills": [
-        "GoHighLevel",
-        "Marketing Automation",
-        "CRM",
-        "Workflow Automation",
-        "Lead Generation"
+        "C++ Programming",
+        "Object-Oriented Programming",
+        "Data Structures",
+        "Algorithms",
+        "Software Development"
       ],
-      "description": "Advanced certification in GoHighLevel platform automation, CRM management, and marketing workflow optimization."
-    },
-    {
-      "title": "Docker & Kubernetes: The Complete Guide",
-      "issuer": "Udemy",
-      "date": "2023",
-      "credentialId": "UC-YYYYYYYY",
-      "icon": "settings",
-      "iconColor": "teal",
-      "image": "https://img-c.udemycdn.com/course/240x135/1793828_7999_6.jpg",
-      "skills": [
-        "Docker",
-        "Kubernetes",
-        "Container Orchestration",
-        "DevOps",
-        "CI/CD"
-      ],
-      "description": "Mastery in containerization, orchestration, and deployment strategies using Docker and Kubernetes."
+      "description": "Comprehensive course on C++ programming, covering core concepts, object-oriented programming, data structures, and algorithms for software development."
     }
+  
   ],  "footer": {
     "title": "FIND ME ON",
     "subtitle": "Feel free to <span class=\"text-primary\">connect</span> with me"
