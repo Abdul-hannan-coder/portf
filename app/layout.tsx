@@ -17,8 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mian Mansoor Ahmad - Portfolio",
-  description: "Portfolio of Mian Mansoor Ahmad - Agentic Chatbot | AI Engineer",
+  title: "Abdul Hannan - Portfolio",
+  description: "Portfolio of Abdul Hannan - Frontend Engineer and AI Automation and Ghl Expert",
 };
 
 export default function RootLayout({
