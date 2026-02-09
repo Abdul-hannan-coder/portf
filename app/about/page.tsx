@@ -12,7 +12,7 @@ export default function AboutPage() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <div className="w-full bg-background-light dark:bg-background-dark overflow-x-hidden">
+    <div className="w-full min-h-[calc(100vh-160px)] bg-background-light dark:bg-background-dark">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           <motion.div
