@@ -41,13 +41,13 @@ export default function Hero() {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl font-semibold text-gray-800 dark:text-white"
+            className="text-3xl sm:text-4xl font-semibold text-gray-800 dark:text-white"
           >
             Welcome! 👋
           </motion.h2>
           <motion.h1
             variants={itemVariants}
-            className="text-5xl font-bold text-gray-900 dark:text-white"
+            className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white"
           >
             I&apos;m{" "}
             <motion.span
@@ -73,13 +73,13 @@ export default function Hero() {
           </motion.h1>
           <motion.p
             variants={itemVariants}
-            className="text-2xl font-medium text-gray-700 dark:text-gray-300"
+            className="text-xl sm:text-2xl font-medium text-gray-700 dark:text-gray-300"
           >
             {personal.tagline}
           </motion.p>
           <motion.p
             variants={itemVariants}
-            className="text-lg text-gray-600 dark:text-gray-400"
+            className="text-base sm:text-lg text-gray-600 dark:text-gray-400"
           >
             {personal.subtitle}
           </motion.p>

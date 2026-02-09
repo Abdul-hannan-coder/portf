@@ -13,12 +13,12 @@ export default function Certifications() {
   const [hoveredImage, setHoveredImage] = useState<string | null>(null);
 
   return (
-    <section ref={ref} className="w-full py-20 md:py-32">
+    <section ref={ref} className="w-full py-20 md:py-32 overflow-x-hidden">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-16"
+        className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-16 px-4"
       >
         Professional{" "}
         <motion.span

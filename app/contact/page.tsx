@@ -65,7 +65,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-background-light dark:bg-background-dark">
+    <div className="w-full bg-background-light dark:bg-background-dark overflow-x-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <motion.div
           ref={ref}
@@ -94,8 +94,8 @@ export default function ContactPage() {
           </motion.p>
         </motion.div>
 
-        <div className="w-full">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+        <div className="w-full overflow-x-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -122,8 +122,8 @@ export default function ContactPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                  whileHover={{ scale: 1.05, x: 10 }}
-                  className="flex items-center space-x-4 p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary/50 transition-all duration-300 group"
+                  whileHover={{ scale: 1.02 }}
+                  className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary/50 transition-all duration-300 group"
                 >
                   <motion.div
                     whileHover={{ rotate: 360, scale: 1.1 }}
@@ -134,11 +134,11 @@ export default function ContactPage() {
                       {method.icon}
                     </span>
                   </motion.div>
-                  <div>
+                  <div className="flex-1 min-w-0">
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {method.label}
                     </p>
-                    <p className="text-gray-900 dark:text-white font-medium">
+                    <p className="text-gray-900 dark:text-white font-medium text-sm sm:text-base break-words">
                       {method.value}
                     </p>
                   </div>
@@ -151,7 +151,7 @@ export default function ContactPage() {
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                 Follow Me
               </h3>
-              <div className="flex space-x-4">
+              <div className="flex flex-wrap gap-3 sm:gap-4">
                 {social.map((item, index) => (
                   <motion.a
                     key={index}
@@ -170,7 +170,7 @@ export default function ContactPage() {
                       y: -5,
                     }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-12 h-12 bg-white dark:bg-gray-900/50 rounded-full flex items-center justify-center border border-gray-200 dark:border-gray-800 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+                    className="w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-gray-900/50 rounded-full flex items-center justify-center border border-gray-200 dark:border-gray-800 hover:border-primary hover:bg-primary/10 transition-all duration-300"
                     aria-label={item.name}
                   >
                     {item.icon === "github" ? (

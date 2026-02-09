@@ -45,7 +45,7 @@ export default function ProjectsPage() {
 
 
   return (
-    <div className="w-full bg-background-light dark:bg-background-dark min-h-screen">
+    <div className="w-full bg-background-light dark:bg-background-dark min-h-screen overflow-x-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
         <motion.div
           ref={ref}
@@ -54,10 +54,10 @@ export default function ProjectsPage() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 max-w-4xl mx-auto"
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 text-glow">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 text-glow">
             {projects.title}
           </h1>
-          <p className="max-w-2xl mx-auto text-lg text-gray-400">
+          <p className="max-w-2xl mx-auto text-base sm:text-lg text-gray-400 px-4">
             {projects.subtitle}
           </p>
         </motion.div>

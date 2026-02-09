@@ -12,7 +12,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="w-full py-20 md:py-32">
+    <section ref={ref} className="w-full py-20 md:py-32 overflow-x-hidden">
       <div className="grid md:grid-cols-3 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -24,7 +24,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl font-bold text-gray-900 dark:text-white"
+            className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white"
           >
             {about.title}{" "}
             <motion.span
