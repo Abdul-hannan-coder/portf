@@ -12,8 +12,8 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="w-full py-20 md:py-32">
-      <div className="grid md:grid-cols-3 gap-12 items-center overflow-hidden">
+    <section ref={ref} className="w-full py-20 md:py-32 overflow-hidden">
+      <div className="grid md:grid-cols-3 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
