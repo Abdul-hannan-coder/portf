@@ -113,34 +113,43 @@
     "title": "My Projects",
     "subtitle": "Explore my work across Upwork, Private clients, and Fiverr. Each project includes detailed descriptions, client feedback, and reviews.",
     "filters": {
-      "platforms": ["All Projects", "Upwork"],
+      "platforms": ["All Projects", "SAAS"],
       "categories": ["All Categories", "Chatbots", "AI & ML", "Platforms", "Python/JavaScript Development", "Analytics", "Cloud Services"],
       "domains": ["All Domains", "Healthcare", "Banking & Finance", "Travel & Hospitality", "Education", "Customer Support", "AI & Automation"]
     },
     "items": [
       {
-        "slug": "azure-decentraland-rasa-chatbots",
-        "platform": "UPWORK",
+        "slug": "facebook-postsiva",
+        "platform": "SAAS",
         "featured": true,
         "rating": 5.0,
-        "title": "Azure Deployment for Decentraland Metaverse with integrated RASA chatbots",
-        "category": "Education",
-        "date": "May 28, 2024 - Oct 9, 2024",
+        "title": "Facebook PostsIVA - AI-Powered Content Creation and Scheduling",
+        "category": "SAAS Platform for Social Media Management",
+        "date": "May 28, 2025- Feb 9, 2026",
         "client": {
-          "name": "Upwork Client (Spain, Alicante)",
-          "feedback": "We worked with Mian on the deployment of a Decentraland Metaverse integrated with Rasa chatbots, and his work met all expectations."
+          "name": "LinkedIn Client (United States, New York)",
+          "feedback": "Great freelancer! Always a pleasure working with him"
         },
-        "tags": ["Rasa", "Azure", "Decentraland", "Docker"],
-        "description": "This project involved a comprehensive deployment of a RASA chatbot within the Decentraland metaverse, hosted on Microsoft Azure, to enhance user interaction and engagement.",
+        "tags": ["AI Content Creation", "Social Media Management", "Scheduling", "Facebook", "SAAS"],
+        "description": "It allow users to create and schedule Facebook page posts using AI-powered content generation and scheduling features. The platform provides an intuitive interface for users to input their content preferences and schedule posts for optimal engagement.It also offers ai enhance ment , image generation , create content from scratch and more features to help users create engaging and relevant content for their Facebook pages.",
         "objectives": [
-          "Deploy a scalable and reliable RASA chatbot on Azure cloud infrastructure.",
-          "Integrate the chatbot seamlessly into the Decentraland metaverse environment.",
-          "Ensure high availability and low latency for real-time user interactions.",
-          "Implement CI/CD pipelines for automated testing and deployment."
+          "Develop an AI-powered content creation tool for Facebook posts.",
+          "Implement scheduling features for optimal post timing.",
+          "Create an intuitive user interface for easy content input and management.",
+          "Integrate with Facebook API for seamless post scheduling and management."
         ],
-        "detailedDescription": "We worked with Mian on the deployment of a Decentraland Metaverse integrated with Rasa chatbots, and his work met all expectations. The project required setting up a robust backend on Azure, including virtual machines, networking, and security groups. Mian configured Nginx as a reverse proxy and used Docker Compose to manage the containerized application services. GitHub Actions were implemented to create a full CI/CD pipeline, automating the build, test, and deployment process, which significantly streamlined our development workflow and reduced manual errors. His expertise in both RASA and cloud infrastructure was pivotal to the project's success.",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuANikwhXU1INaIix2EUGHYZZMpbQttB9b0g6RaQB_GkXoXoLTDsHBL4TP4oEblL-FXfJZfeRhPx517nOb3O3_-lOzEoebcX0w-iWVuZApluHua-koKzG64NGrNmqlPMV9tHpSB-tgMynuX9dCm3XrJ2VwtV0nEa1dGyRuEbyCLEamiQVK6tgknb_VlJrJ3_Fr3EhE8urx9VcL73LDti-dMKjdW6XDtK2youQwOGMPLTuHc1wpauQHF4Q3B67J29VNOafwFiH2i3wsg",
-        "technologies": ["Rasa", "Azure", "Decentraland", "Docker", "Docker Compose", "Nginx", "GitHub Actions", "CI/CD"]
+        "detailedDescription": "Facebook Postsiva is an AI-powered platform designed to help users create and schedule engaging content for their Facebook pages. The platform leverages advanced AI algorithms to generate content based on user preferences and trends, ensuring maximum engagement. Users can easily schedule posts, manage their content calendar, and track performance metrics. The intuitive interface and seamless integration with Facebook API make it a powerful tool for social media management.",
+"image": [
+  "https://i.ibb.co/4RSYfKrX/Whats-App-Image-2026-02-13-at-10-39-39-PM-1.jpg",
+  "https://i.ibb.co/WN4jrFw3/Whats-App-Image-2026-02-13-at-10-39-27-PM-5.jpg",
+  "https://i.ibb.co/1WNdHXC/Whats-App-Image-2026-02-13-at-10-39-27-PM-4.jpg",
+  "https://i.ibb.co/Tx76B784/Whats-App-Image-2026-02-13-at-10-39-39-PM.jpg",
+  "https://i.ibb.co/tTmWPZLp/Whats-App-Image-2026-02-13-at-10-39-27-PM-3.jpg",
+  "https://i.ibb.co/0yKsnP99/Whats-App-Image-2026-02-13-at-10-39-27-PM-2.jpg",
+  "https://i.ibb.co/PsYn3pn0/Whats-App-Image-2026-02-13-at-10-39-27-PM.jpg",
+  "https://i.ibb.co/8g6qCCV1/Whats-App-Image-2026-02-13-at-10-39-27-PM-1.jpg"
+],
+        "technologies": ["Fastapi", "Nextjs", "Tailwind css", "vercel", "deoploment", "CI/CD", "Redis", "MySQL"]
       },
       {
         "slug": "lamp-python-rest-api-aws",

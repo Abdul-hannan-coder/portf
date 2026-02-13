@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import portfolioData from "../../data/portfolio.json";
+import ProjectCard from "../components/ProjectCard";
 
 // Material Icons Outlined styles
 const materialIconsOutlined = {
@@ -36,10 +37,10 @@ export default function ProjectsPage() {
       project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
-    
+
     const categoryMatch = selectedCategories.length === 0 ||
       selectedCategories.includes(project.category);
-    
+
     return searchMatch && categoryMatch;
   });
 
@@ -109,11 +110,10 @@ export default function ProjectsPage() {
                   key={category}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className={`flex items-center gap-2 px-4 py-3 rounded-lg border cursor-pointer transition-all ${
-                    selectedCategories.includes(category)
-                      ? "bg-primary/20 border-primary/50 text-white"
-                      : "bg-gray-800/50 border-gray-700 text-gray-400 hover:border-gray-600 hover:text-gray-300"
-                  }`}
+                  className={`flex items-center gap-2 px-4 py-3 rounded-lg border cursor-pointer transition-all ${selectedCategories.includes(category)
+                    ? "bg-primary/20 border-primary/50 text-white"
+                    : "bg-gray-800/50 border-gray-700 text-gray-400 hover:border-gray-600 hover:text-gray-300"
+                    }`}
                 >
                   <input
                     type="checkbox"
@@ -121,11 +121,10 @@ export default function ProjectsPage() {
                     onChange={() => toggleCategory(category)}
                     className="hidden"
                   />
-                  <div className={`w-4 h-4 rounded border-2 flex items-center justify-center transition-all ${
-                    selectedCategories.includes(category)
-                      ? "bg-primary border-primary"
-                      : "border-gray-600"
-                  }`}>
+                  <div className={`w-4 h-4 rounded border-2 flex items-center justify-center transition-all ${selectedCategories.includes(category)
+                    ? "bg-primary border-primary"
+                    : "border-gray-600"
+                    }`}>
                     {selectedCategories.includes(category) && (
                       <span className="material-icons text-white text-xs">check</span>
                     )}
@@ -155,112 +154,7 @@ export default function ProjectsPage() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full"
         >
           {filteredProjects.map((project, index) => (
-            <Link
-              key={index}
-              href={`/projects/${project.slug || project.title.toLowerCase().replace(/\s+/g, "-")}`}
-              className="block h-full"
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{
-                  scale: 1.03,
-                  y: -8,
-                }}
-                className="bg-[#191920] rounded-2xl border border-gray-800 flex flex-col h-full transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 cursor-pointer group overflow-hidden"
-              >
-                {/* Image Thumbnail */}
-                {project.image ? (
-                  <div className="relative w-full h-48 bg-gray-800 overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300"
-                      unoptimized
-                    />
-                    <div className="absolute top-3 left-3 flex items-center gap-2">
-                      <span className="bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
-                        {project.platform}
-                      </span>
-                      {project.featured && (
-                        <span className="bg-yellow-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
-                          Featured
-                        </span>
-                      )}
-                    </div>
-                    <div className="absolute top-3 right-3 flex items-center space-x-1 bg-black/60 backdrop-blur-sm px-2 py-1 rounded-full">
-                      <span className="material-symbols-outlined text-yellow-400 text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>
-                        star
-                      </span>
-                      <span className="text-white font-semibold text-xs">
-                        {project.rating}
-                      </span>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="relative w-full h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                    <span className="material-icons text-gray-600 text-6xl">code</span>
-                    <div className="absolute top-3 left-3 flex items-center gap-2">
-                      <span className="bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
-                        {project.platform}
-                      </span>
-                      {project.featured && (
-                        <span className="bg-yellow-500/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
-                          Featured
-                        </span>
-                      )}
-                    </div>
-                    <div className="absolute top-3 right-3 flex items-center space-x-1 bg-black/60 backdrop-blur-sm px-2 py-1 rounded-full">
-                      <span className="material-symbols-outlined text-yellow-400 text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>
-                        star
-                      </span>
-                      <span className="text-white font-semibold text-xs">
-                        {project.rating}
-                      </span>
-                    </div>
-                  </div>
-                )}
-
-                {/* Content Section */}
-                <div className="p-6 flex flex-col flex-grow space-y-4">
-                  {/* Title */}
-                  <h3 className="text-lg font-semibold text-white leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                    {project.title}
-                  </h3>
-
-                  {/* Category Badge */}
-                  <div className="flex items-center gap-2">
-                    <span className="bg-teal-500/10 text-teal-400 text-xs font-medium px-3 py-1 rounded-full border border-teal-500/20">
-                      {project.category}
-                    </span>
-                  </div>
-
-                  {/* Description */}
-                  <p className="text-sm text-gray-400 line-clamp-2 flex-grow">
-                    {project.description || project.client?.feedback || "No description available."}
-                  </p>
-
-                  {/* Tags Section - Only show first 3 */}
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {project.tags.slice(0, 3).map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="bg-primary/10 text-primary/80 text-xs font-medium px-2.5 py-1 rounded-md border border-primary/20"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                    {project.tags.length > 3 && (
-                      <span className="bg-gray-800 text-gray-400 text-xs font-medium px-2.5 py-1 rounded-md">
-                        +{project.tags.length - 3}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
+            <ProjectCard key={index} project={project} index={index} />
           ))}
         </motion.div>
       </div>

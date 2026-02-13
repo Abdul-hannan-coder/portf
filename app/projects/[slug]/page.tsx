@@ -1,6 +1,6 @@
 "use client";
 
-import { use } from "react";
+import { use, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -16,6 +16,7 @@ export default function ProjectDetailPage({
   const { slug } = use(params);
   const { projects } = portfolioData;
   const project = projects.items.find((p) => p.slug === slug);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
@@ -37,6 +38,22 @@ export default function ProjectDetailPage({
       </div>
     );
   }
+
+  const images = Array.isArray(project.image)
+    ? project.image
+    : (project.image ? [project.image] : []);
+
+  const nextImage = () => {
+    if (images.length > 0) {
+      setSelectedImageIndex((prev) => (prev + 1) % images.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (images.length > 0) {
+      setSelectedImageIndex((prev) => (prev - 1 + images.length) % images.length);
+    }
+  };
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }).map((_, i) => (
@@ -121,7 +138,7 @@ export default function ProjectDetailPage({
                 </motion.p>
               )}
 
-              {project.image && (
+              {images.length > 0 && (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
@@ -131,16 +148,74 @@ export default function ProjectDetailPage({
                   <h2 className="text-2xl font-bold text-white dark:text-white mb-4">
                     Project Visuals
                   </h2>
-                  <div className="aspect-video bg-gray-700/50 rounded-lg overflow-hidden">
+
+                  {/* Main Image Display */}
+                  <div className="aspect-video bg-gray-700/50 rounded-lg overflow-hidden mb-4 relative group">
                     <Image
-                      alt={`Screenshot of ${project.title}`}
+                      alt={`Screenshot ${selectedImageIndex + 1} of ${project.title}`}
                       className="w-full h-full object-cover"
-                      src={project.image}
+                      src={images[selectedImageIndex]}
                       width={1200}
                       height={675}
                       unoptimized
                     />
+
+                    {/* Slider Navigation Buttons */}
+                    {images.length > 1 && (
+                      <>
+                        <button
+                          onClick={prevImage}
+                          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity transition-colors"
+                          aria-label="Previous image"
+                        >
+                          <span className="material-icons text-white">chevron_left</span>
+                        </button>
+                        <button
+                          onClick={nextImage}
+                          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity transition-colors"
+                          aria-label="Next image"
+                        >
+                          <span className="material-icons text-white">chevron_right</span>
+                        </button>
+                      </>
+                    )}
                   </div>
+
+                  {/* Image Gallery Thumbnails */}
+                  {images.length > 1 && (
+                    <div className="flex gap-3 overflow-x-auto pb-2">
+                      {images.map((img, index) => (
+                        <motion.button
+                          key={index}
+                          onClick={() => setSelectedImageIndex(index)}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className={`relative flex-shrink-0 w-24 h-16 rounded-lg overflow-hidden border-2 transition-all ${selectedImageIndex === index
+                              ? "border-primary shadow-lg shadow-primary/30"
+                              : "border-gray-600 hover:border-gray-400"
+                            }`}
+                        >
+                          <Image
+                            src={img}
+                            alt={`Thumbnail ${index + 1}`}
+                            fill
+                            className="object-cover"
+                            unoptimized
+                          />
+                          {selectedImageIndex === index && (
+                            <div className="absolute inset-0 bg-primary/20" />
+                          )}
+                        </motion.button>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Image Counter */}
+                  {images.length > 1 && (
+                    <div className="text-center mt-3 text-sm text-gray-400">
+                      Image {selectedImageIndex + 1} of {images.length}
+                    </div>
+                  )}
                 </motion.div>
               )}
 
