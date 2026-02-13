@@ -113,7 +113,7 @@ export default function ProjectDetailPage({
                 <div className="flex items-center space-x-1">
                   {renderStars(project.rating)}
                   <span className="text-white font-semibold text-sm">
-                    {project.rating}
+                    {/* {project.rating} */}
                   </span>
                 </div>
               </motion.div>
@@ -201,8 +201,8 @@ export default function ProjectDetailPage({
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className={`relative flex-shrink-0 w-32 h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 snap-center ${selectedImageIndex === index
-                                ? "border-primary shadow-lg shadow-primary/20 ring-2 ring-primary/20"
-                                : "border-gray-700 opacity-60 hover:opacity-100 hover:border-gray-500"
+                              ? "border-primary shadow-lg shadow-primary/20 ring-2 ring-primary/20"
+                              : "border-gray-700 opacity-60 hover:opacity-100 hover:border-gray-500"
                               }`}
                           >
                             <Image
