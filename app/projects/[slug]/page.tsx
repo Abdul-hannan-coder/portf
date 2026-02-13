@@ -145,77 +145,107 @@ export default function ProjectDetailPage({
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="mb-10"
                 >
-                  <h2 className="text-2xl font-bold text-white dark:text-white mb-4">
-                    Project Visuals
+                  <h2 className="text-2xl font-bold text-white dark:text-white mb-6 flex items-center gap-2">
+                    <span className="material-icons text-primary">photo_library</span>
+                    Project Gallery
                   </h2>
 
                   {/* Main Image Display */}
-                  <div className="aspect-video bg-gray-700/50 rounded-lg overflow-hidden mb-4 relative group">
+                  <div className="aspect-video bg-gray-900 rounded-xl overflow-hidden mb-6 relative group border border-gray-800 shadow-2xl">
                     <Image
                       alt={`Screenshot ${selectedImageIndex + 1} of ${project.title}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       src={images[selectedImageIndex]}
                       width={1200}
                       height={675}
                       unoptimized
                     />
 
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+
                     {/* Slider Navigation Buttons */}
                     {images.length > 1 && (
                       <>
                         <button
                           onClick={prevImage}
-                          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity transition-colors"
+                          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-primary/80 backdrop-blur-md text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-90 border border-white/10"
                           aria-label="Previous image"
                         >
-                          <span className="material-icons text-white">chevron_left</span>
+                          <span className="material-icons text-white block">chevron_left</span>
                         </button>
                         <button
                           onClick={nextImage}
-                          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity transition-colors"
+                          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-primary/80 backdrop-blur-md text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-90 border border-white/10"
                           aria-label="Next image"
                         >
-                          <span className="material-icons text-white">chevron_right</span>
+                          <span className="material-icons text-white block">chevron_right</span>
                         </button>
                       </>
                     )}
+
+                    {/* Image Counter Badge */}
+                    <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-white border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                      {selectedImageIndex + 1} / {images.length}
+                    </div>
                   </div>
 
                   {/* Image Gallery Thumbnails */}
                   {images.length > 1 && (
-                    <div className="flex gap-3 overflow-x-auto pb-2">
-                      {images.map((img, index) => (
-                        <motion.button
-                          key={index}
-                          onClick={() => setSelectedImageIndex(index)}
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          className={`relative flex-shrink-0 w-24 h-16 rounded-lg overflow-hidden border-2 transition-all ${selectedImageIndex === index
-                              ? "border-primary shadow-lg shadow-primary/30"
-                              : "border-gray-600 hover:border-gray-400"
-                            }`}
-                        >
-                          <Image
-                            src={img}
-                            alt={`Thumbnail ${index + 1}`}
-                            fill
-                            className="object-cover"
-                            unoptimized
-                          />
-                          {selectedImageIndex === index && (
-                            <div className="absolute inset-0 bg-primary/20" />
-                          )}
-                        </motion.button>
-                      ))}
+                    <div className="relative">
+                      <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
+                        {images.map((img, index) => (
+                          <motion.button
+                            key={index}
+                            onClick={() => setSelectedImageIndex(index)}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className={`relative flex-shrink-0 w-32 h-20 rounded-lg overflow-hidden border-2 transition-all duration-300 snap-center ${selectedImageIndex === index
+                                ? "border-primary shadow-lg shadow-primary/20 ring-2 ring-primary/20"
+                                : "border-gray-700 opacity-60 hover:opacity-100 hover:border-gray-500"
+                              }`}
+                          >
+                            <Image
+                              src={img}
+                              alt={`Thumbnail ${index + 1}`}
+                              fill
+                              className="object-cover"
+                              unoptimized
+                            />
+                            {selectedImageIndex === index && (
+                              <div className="absolute inset-0 bg-primary/10" />
+                            )}
+                          </motion.button>
+                        ))}
+                      </div>
                     </div>
                   )}
+                </motion.div>
+              )}
 
-                  {/* Image Counter */}
-                  {images.length > 1 && (
-                    <div className="text-center mt-3 text-sm text-gray-400">
-                      Image {selectedImageIndex + 1} of {images.length}
-                    </div>
-                  )}
+              {/* Video Section */}
+              {project.video && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  className="mb-10"
+                >
+                  <h2 className="text-2xl font-bold text-white dark:text-white mb-4">
+                    Project Demo
+                  </h2>
+                  <div className="aspect-video bg-gray-700/50 rounded-lg overflow-hidden border border-gray-700/50">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={project.video}
+                      title="Project Video"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
                 </motion.div>
               )}
 

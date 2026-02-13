@@ -16,10 +16,26 @@
     ]
   },
   "navigation": [
-    { "label": "Home", "icon": "home", "href": "/" },
-    { "label": "About", "icon": "person", "href": "/about" },
-    { "label": "Projects", "icon": "work", "href": "/projects" },
-    { "label": "Contact", "icon": "email", "href": "/contact" }
+    {
+      "label": "Home",
+      "icon": "home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "icon": "person",
+      "href": "/about"
+    },
+    {
+      "label": "Projects",
+      "icon": "work",
+      "href": "/projects"
+    },
+    {
+      "label": "Contact",
+      "icon": "email",
+      "href": "/contact"
+    }
   ],
   "timeline": [
     {
@@ -37,7 +53,7 @@
       ],
       "skills": [
         "Next.js",
-        "React",  
+        "React",
         "Gohighlevel Automation",
         "N8N , Make , Zapier Automation",
         "Redux",
@@ -78,7 +94,7 @@
       "description": [
         "Core Courses: Programming Fundamentals, Data Structures, Database Management, Web Development, Computer Networks",
         "Specialization Courses: Web Application with java , Network Security , Database Management with MySQL ",
-        "Audit Courses: Physics"  
+        "Audit Courses: Physics"
       ],
       "skills": [
         "Programming Fundamentals",
@@ -113,9 +129,28 @@
     "title": "My Projects",
     "subtitle": "Explore my work across Upwork, Private clients, and Fiverr. Each project includes detailed descriptions, client feedback, and reviews.",
     "filters": {
-      "platforms": ["All Projects", "SAAS"],
-      "categories": ["All Categories", "Chatbots", "AI & ML", "Platforms", "Python/JavaScript Development", "Analytics", "Cloud Services"],
-      "domains": ["All Domains", "Healthcare", "Banking & Finance", "Travel & Hospitality", "Education", "Customer Support", "AI & Automation"]
+      "platforms": [
+        "All Projects",
+        "SAAS"
+      ],
+      "categories": [
+        "All Categories",
+        "Chatbots",
+        "AI & ML",
+        "Platforms",
+        "Python/JavaScript Development",
+        "Analytics",
+        "Cloud Services"
+      ],
+      "domains": [
+        "All Domains",
+        "Healthcare",
+        "Banking & Finance",
+        "Travel & Hospitality",
+        "Education",
+        "Customer Support",
+        "AI & Automation"
+      ]
     },
     "items": [
       {
@@ -130,7 +165,13 @@
           "name": "LinkedIn Client (United States, New York)",
           "feedback": "Great freelancer! Always a pleasure working with him"
         },
-        "tags": ["AI Content Creation", "Social Media Management", "Scheduling", "Facebook", "SAAS"],
+        "tags": [
+          "AI Content Creation",
+          "Social Media Management",
+          "Scheduling",
+          "Facebook",
+          "SAAS"
+        ],
         "description": "It allow users to create and schedule Facebook page posts using AI-powered content generation and scheduling features. The platform provides an intuitive interface for users to input their content preferences and schedule posts for optimal engagement.It also offers ai enhance ment , image generation , create content from scratch and more features to help users create engaging and relevant content for their Facebook pages.",
         "objectives": [
           "Develop an AI-powered content creation tool for Facebook posts.",
@@ -139,17 +180,27 @@
           "Integrate with Facebook API for seamless post scheduling and management."
         ],
         "detailedDescription": "Facebook Postsiva is an AI-powered platform designed to help users create and schedule engaging content for their Facebook pages. The platform leverages advanced AI algorithms to generate content based on user preferences and trends, ensuring maximum engagement. Users can easily schedule posts, manage their content calendar, and track performance metrics. The intuitive interface and seamless integration with Facebook API make it a powerful tool for social media management.",
-"image": [
-  "https://i.ibb.co/4RSYfKrX/Whats-App-Image-2026-02-13-at-10-39-39-PM-1.jpg",
-  "https://i.ibb.co/WN4jrFw3/Whats-App-Image-2026-02-13-at-10-39-27-PM-5.jpg",
-  "https://i.ibb.co/1WNdHXC/Whats-App-Image-2026-02-13-at-10-39-27-PM-4.jpg",
-  "https://i.ibb.co/Tx76B784/Whats-App-Image-2026-02-13-at-10-39-39-PM.jpg",
-  "https://i.ibb.co/tTmWPZLp/Whats-App-Image-2026-02-13-at-10-39-27-PM-3.jpg",
-  "https://i.ibb.co/0yKsnP99/Whats-App-Image-2026-02-13-at-10-39-27-PM-2.jpg",
-  "https://i.ibb.co/PsYn3pn0/Whats-App-Image-2026-02-13-at-10-39-27-PM.jpg",
-  "https://i.ibb.co/8g6qCCV1/Whats-App-Image-2026-02-13-at-10-39-27-PM-1.jpg"
-],
-        "technologies": ["Fastapi", "Nextjs", "Tailwind css", "vercel", "deoploment", "CI/CD", "Redis", "MySQL"]
+        "image": [
+          "https://i.ibb.co/4RSYfKrX/Whats-App-Image-2026-02-13-at-10-39-39-PM-1.jpg",
+          "https://i.ibb.co/WN4jrFw3/Whats-App-Image-2026-02-13-at-10-39-27-PM-5.jpg",
+          "https://i.ibb.co/1WNdHXC/Whats-App-Image-2026-02-13-at-10-39-27-PM-4.jpg",
+          "https://i.ibb.co/Tx76B784/Whats-App-Image-2026-02-13-at-10-39-39-PM.jpg",
+          "https://i.ibb.co/tTmWPZLp/Whats-App-Image-2026-02-13-at-10-39-27-PM-3.jpg",
+          "https://i.ibb.co/0yKsnP99/Whats-App-Image-2026-02-13-at-10-39-27-PM-2.jpg",
+          "https://i.ibb.co/PsYn3pn0/Whats-App-Image-2026-02-13-at-10-39-27-PM.jpg",
+          "https://i.ibb.co/8g6qCCV1/Whats-App-Image-2026-02-13-at-10-39-27-PM-1.jpg"
+        ],
+        "technologies": [
+          "Fastapi",
+          "Nextjs",
+          "Tailwind css",
+          "vercel",
+          "deoploment",
+          "CI/CD",
+          "Redis",
+          "MySQL"
+        ],
+        "video": "https://www.youtube.com/embed/noEVR5r4YMs?si=XpQ0MbF0KojVLEf9"
       },
       {
         "slug": "lamp-python-rest-api-aws",
@@ -163,7 +214,13 @@
           "name": "Upwork Client (United States, Santa Clara)",
           "feedback": "Mian did a great job on a LAMP REST API development with Amazon Web Services. We'd be happy to work with this freelancer again."
         },
-        "tags": ["Python", "LAMP Stack", "REST API", "AWS", "AWS EC2"],
+        "tags": [
+          "Python",
+          "LAMP Stack",
+          "REST API",
+          "AWS",
+          "AWS EC2"
+        ],
         "description": "Development of a robust LAMP stack REST API with Python, deployed on Amazon Web Services infrastructure.",
         "objectives": [
           "Build scalable REST API endpoints using Python.",
@@ -173,7 +230,16 @@
         ],
         "detailedDescription": "Mian did a great job on a LAMP REST API development with Amazon Web Services. The project involved creating a comprehensive RESTful API using Python, setting up the LAMP stack on AWS EC2 instances, and implementing proper security measures. The API was designed to handle high traffic loads and provided excellent performance throughout the development process.",
         "image": "https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_stacked_REV_SQ.91cd4af40773cbfbd15577a3c2b8a346fe3e8fa2.png",
-        "technologies": ["Python", "LAMP Stack", "REST API", "AWS", "AWS EC2", "Linux", "Apache", "MySQL"]
+        "technologies": [
+          "Python",
+          "LAMP Stack",
+          "REST API",
+          "AWS",
+          "AWS EC2",
+          "Linux",
+          "Apache",
+          "MySQL"
+        ]
       },
       {
         "slug": "rasa-chatbot-chatgpt-integration",
@@ -187,7 +253,11 @@
           "name": "Upwork Client (Spain, Alicante)",
           "feedback": "Mian is specialized in Rasa Open Source and his expertise in customizing functionalities and adeptness in both cloud and on-premise was exactly..."
         },
-        "tags": ["Rasa", "Python", "Automation"],
+        "tags": [
+          "Rasa",
+          "Python",
+          "Automation"
+        ],
         "description": "Development and deployment of a RASA chatbot with ChatGPT integration for enhanced conversational capabilities.",
         "objectives": [
           "Develop a custom RASA chatbot with advanced NLU capabilities.",
@@ -197,7 +267,14 @@
         ],
         "detailedDescription": "Mian is specialized in Rasa Open Source and his expertise in customizing functionalities and adeptness in both cloud and on-premise was exactly what we needed. The project involved developing a sophisticated chatbot using RASA framework, integrating it with ChatGPT for enhanced conversational abilities, and deploying it across multiple environments. The solution provided excellent user experience and met all our requirements.",
         "image": "https://rasa.com/static/rasa-logo-twitter-card-1200x630-2022-11-22-d8b3d91f3c7ecb1bc17d0e1df9da7e47.png",
-        "technologies": ["Rasa", "Python", "ChatGPT", "NLU", "Docker", "API Integration"]
+        "technologies": [
+          "Rasa",
+          "Python",
+          "ChatGPT",
+          "NLU",
+          "Docker",
+          "API Integration"
+        ]
       },
       {
         "slug": "python-flask-programming-study",
@@ -211,7 +288,11 @@
           "name": "Upwork Client",
           "feedback": "Very good communication, delivered on time. It was nice working with you!"
         },
-        "tags": ["Python", "Flask", "Web Development"],
+        "tags": [
+          "Python",
+          "Flask",
+          "Web Development"
+        ],
         "description": "Python programming study project using Flask framework for web development.",
         "objectives": [
           "Develop Flask web application.",
@@ -220,7 +301,13 @@
         ],
         "detailedDescription": "Very good communication, delivered on time. It was nice working with you! This project involved creating a Python programming study platform using Flask, implementing clean code practices and delivering a functional web application.",
         "image": "https://miro.medium.com/v2/resize:fit:438/1*0G5zu7CnXdMT9pGbYUTQLQ.png",
-        "technologies": ["Python", "Flask", "Web Development", "HTML", "CSS"]
+        "technologies": [
+          "Python",
+          "Flask",
+          "Web Development",
+          "HTML",
+          "CSS"
+        ]
       },
       {
         "slug": "frontend-chatbot-webchat",
@@ -234,7 +321,11 @@
           "name": "Upwork Client (Spain, Alicante)",
           "feedback": "Great freelancer! Always a pleasure working with him"
         },
-        "tags": ["Vite", "Webchat Integration", "Web Development"],
+        "tags": [
+          "Vite",
+          "Webchat Integration",
+          "Web Development"
+        ],
         "description": "Front-end development and troubleshooting for chatbot webchat integration.",
         "objectives": [
           "Fix and improve chatbot webchat interface.",
@@ -243,7 +334,13 @@
         ],
         "detailedDescription": "Great freelancer! Always a pleasure working with him. This project involved front-end development work on a chatbot webchat interface, fixing issues, improving user experience, and ensuring seamless integration with backend systems.",
         "image": "https://vitejs.dev/logo-with-shadow.png",
-        "technologies": ["Vite", "Webchat Integration", "Web Development", "JavaScript", "React"]
+        "technologies": [
+          "Vite",
+          "Webchat Integration",
+          "Web Development",
+          "JavaScript",
+          "React"
+        ]
       },
       {
         "slug": "azure-openai-api-setup",
@@ -262,7 +359,11 @@
             "API connection setup and configuration"
           ]
         },
-        "tags": ["Azure OpenAI", "API Integration", "Python"],
+        "tags": [
+          "Azure OpenAI",
+          "API Integration",
+          "Python"
+        ],
         "description": "Setup and configuration of Azure OpenAI platform with API connections.",
         "objectives": [
           "Setup of the Azure OpenAI platform",
@@ -271,10 +372,17 @@
         ],
         "detailedDescription": "This project involved setting up the Azure OpenAI platform, deploying and configuring AI models, and establishing secure API connections. The setup included proper authentication, rate limiting, and monitoring to ensure reliable access to OpenAI services through Azure infrastructure.",
         "image": "https://swimburger.net/media/ppnn3pcl/azure.png",
-        "technologies": ["Azure OpenAI", "API Integration", "Python", "Azure", "REST API"]
+        "technologies": [
+          "Azure OpenAI",
+          "API Integration",
+          "Python",
+          "Azure",
+          "REST API"
+        ]
       }
     ]
-  },  "certifications": [
+  },
+  "certifications": [
     {
       "title": "AI For Everyone",
       "issuer": "Coursera",
@@ -326,10 +434,9 @@
       ],
       "description": "Comprehensive course on C++ programming, covering core concepts, object-oriented programming, data structures, and algorithms for software development."
     }
-  
-  ],  "footer": {
+  ],
+  "footer": {
     "title": "FIND ME ON",
     "subtitle": "Feel free to <span class=\"text-primary\">connect</span> with me"
   }
 }
-

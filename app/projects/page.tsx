@@ -47,7 +47,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="w-full bg-background-light dark:bg-background-dark min-h-screen overflow-x-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ export default function ProjectsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-8 w-full"
+          className="mb-8 w-full max-w-4xl mx-auto"
         >
           <div className="relative">
             <span className="material-icons absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
@@ -97,7 +97,7 @@ export default function ProjectsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mb-12 w-full"
+          className="mb-12 w-full max-w-5xl mx-auto"
         >
           <div className="bg-gray-800/30 border border-gray-700 rounded-xl p-6">
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4 flex items-center gap-2">
@@ -151,7 +151,7 @@ export default function ProjectsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full"
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 w-full"
         >
           {filteredProjects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
