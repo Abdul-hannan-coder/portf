@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#A755F7",
-        "background-light": "#F3F4F6",
+        "background-light": "#0D0C12", // Forced dark
         "background-dark": "#0D0C12",
       },
       fontFamily: {
