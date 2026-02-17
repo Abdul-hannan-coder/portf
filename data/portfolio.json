@@ -1,6 +1,6 @@
 {
   "personal": {
-    "name": "Abdul Hannan",
+    "name": "Abdul Hannan ",
     "initials": "AH",
     "title": "Frontend Engineer | Automation and Gohighlevel Expert ",
     "subtitle": "I specialize in building high-performance, scalable web applications and automating business processes using Gohighlevel. With a strong background in frontend development and a passion for creating seamless user experiences, I help businesses enhance their online presence and streamline operations through innovative solutions.",
@@ -211,7 +211,7 @@
       },
 
         {
-          "slug": "Gohighlevel ",
+          "slug": "Gohighlevel",
           "platform": "Private Clients",
           "featured": false,
           "rating": 4.5,
