@@ -135,12 +135,18 @@
       ],
       "categories": [
         "All Categories",
-        "Chatbots",
-        "AI & ML",
-        "Platforms",
-        "Python/JavaScript Development",
-        "Analytics",
-        "Cloud Services"
+        "N8N",
+        "Make",
+        "Zapier",
+        "Gohighlevel",
+        "SAAS",
+        "Nextjs",
+        "Reactjs",
+        "Nodejs",
+        "Docker",
+        "Vercel",
+        "Cloud Deployment (AWS, Oracle Cloud, Azure)",
+        "Collaboration and Communication"
       ],
       "domains": [
         "All Domains",
@@ -201,7 +207,48 @@
           "MySQL"
         ],
         "video": "https://www.youtube.com/embed/noEVR5r4YMs?si=XpQ0MbF0KojVLEf9"
-      }
+      },
+
+        {
+          "slug": "Gohighlevel Funnel and Community Setup and Automations",
+          "platform": "Private Clients",
+          "featured": false,
+          "rating": 4.5,
+          "title": "Gohighlevel Funnel and Community Setup and Automations",
+          "category": "Gohighlevel Platform for Marketing Automation",
+          "date": "March 15, 2025 - April 30, 2025",
+          "client": {
+            "name": "Private Client (United States, California)",
+            "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
+          },
+          "tags": [
+            "Gohighlevel",
+            "Marketing Automation",
+            "Funnel Setup",
+            "Community Building",
+            "Lead Generation"
+          ],
+          "description": "This project involved setting up a comprehensive marketing funnel and community on the Gohighlevel platform for a private client. The goal was to create an effective lead generation system and build a thriving community around the client's brand. The project included designing and implementing various automations to streamline marketing efforts and enhance customer engagement.",
+          "objectives": [
+            "Design and implement a marketing funnel using Gohighlevel to capture and nurture leads.",
+            "Set up a community platform to engage with customers and build brand loyalty.",
+            "Create automations to streamline marketing processes and improve efficiency.",
+            "Integrate the funnel and community with existing marketing tools for seamless operation."
+          ],
+          "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
+          "image": [
+            "https://i.ibb.co/mVXHL25Z/screencapture-listcatcher-book-appointment-2026-02-17-22-48-52.png",
+            "https://i.ibb.co/chKhZ2Cr/screencapture-listcatcher-2026-02-17-22-48-21.png"
+          ],
+          "technologies": [
+            "Gohighlevel",
+            "Marketing Automation",
+            "Funnel Setup",
+            "Community Building",
+            "Lead Generation"
+          ],
+          "video": null
+        }
     ]
   },
   "certifications": [
