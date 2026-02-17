@@ -339,6 +339,24 @@ export default function ProjectDetailPage({
                       </p>
                     </div>
                   </div>
+                  {project.liveUrl && (
+                    <div className="flex items-center">
+                      <span className="material-icons text-gray-400 dark:text-gray-400 mr-3">
+                        language
+                      </span>
+                      <div>
+                        <p className="text-gray-400 dark:text-gray-400">Live Link</p>
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-medium text-primary hover:text-primary/80 transition-colors break-all"
+                        >
+                          {project.liveUrl}
+                        </a>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </motion.div>
 

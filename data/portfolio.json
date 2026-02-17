@@ -207,7 +207,8 @@
           "Redis",
           "MySQL"
         ],
-        "video": "https://www.youtube.com/embed/noEVR5r4YMs?si=XpQ0MbF0KojVLEf9"
+        "video": "https://www.youtube.com/embed/noEVR5r4YMs?si=XpQ0MbF0KojVLEf9",
+        "liveUrl": "https://postsiva.facebook.com"
       },
 
         {
@@ -249,7 +250,8 @@
             "Community Building",
             "Lead Generation"
           ],
-          "video": null
+          "video": null,
+          "liveUrl": "https://listcatcher.com"
         }
     ]
   },

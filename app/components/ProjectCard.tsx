@@ -15,6 +15,7 @@ interface Project {
     platform?: string;
     featured?: boolean;
     rating?: string | number;
+    liveUrl?: string;
     client?: {
         feedback?: string | null;
     };
@@ -185,6 +186,21 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                         </span>
                     )}
                 </div>
+
+                {project.liveUrl && (
+                    <div className="pt-2 relative z-10">
+                        <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <span className="material-icons text-base">language</span>
+                            Live Site
+                        </a>
+                    </div>
+                )}
             </div>
         </motion.div>
     );
